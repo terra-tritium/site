@@ -1,0 +1,119 @@
+{% set page_title = 'eSports Dota 2 World Championship – Final' %}
+{% set header_image = bg_3 %}
+{% set header_small = 'true' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">Dota 2 World Championship – Final</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <div class="row hgap-lg vgap-lg">
+            <div class="col-lg mpl-content single-match">
+                <article class="mpl-post">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="esports-matches.html">Matches</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">eSports Match</li>
+                        </ol>
+                    </nav>
+
+                    <div class="cyberpress-match">
+                        <div class="cyberpress-match-participants">
+                            <div class="cyberpress-match-participant">
+                                <div class="cyberpress-match-participant-thumbnail">
+                                    <a href="esports-single-team.html">{{ img('esports/queend_300x300.png') }}</a>
+                                </div>
+                                <h2 class="cyberpress-match-participant-title h4">
+                                    <a href="esports-single-team.html">
+                                        Queend
+                                        <img src="assets/images/flags/ch.svg" alt="ch" class="cyberpress-flag-img">
+                                    </a>
+                                </h2>
+                                <div class="cyberpress-match-participant-players">
+                                    <ul>
+                                        <li>
+                                            <a class="cyberpress-match-participant-players-player" href="esports-single-player.html">
+                                                <img src="assets/images/esports/player-bowman_76x76.jpg" class="attachment-thumbnail size-thumbnail" alt="">
+                                                <span>Bowman</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="cyberpress-match-participant-vs">
+                                <div class="cyberpress-match-participant-time-start">January 15, 2021 4:00 pm</div>
+                                <div class="cyberpress-match-points h3">VS</div>
+                            </div>
+                            <div class="cyberpress-match-participant">
+                                <div class="cyberpress-match-participant-thumbnail">
+                                    <a href="esports-single-team.html">{{ img('esports/military-skull_300x300.png') }}</a>
+                                </div>
+                                <h2 class="cyberpress-match-participant-title h4">
+                                    <a href="esports-single-team.html">
+                                        Military Skull
+                                        <img src="assets/images/flags/br.svg" alt="br" class="cyberpress-flag-img">
+                                    </a>
+                                </h2>
+                                <div class="cyberpress-match-participant-players">
+                                    <ul>
+                                        <li>
+                                            <a class="cyberpress-match-participant-players-player" href="esports-single-player.html">
+                                                <img src="assets/images/esports/player-garpy_76x76.jpg" class="attachment-thumbnail size-thumbnail" alt="">
+                                                <span>GaRpY</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="cyberpress-match-info">
+                            <li>
+                                <a href="#" class="cyberpress-game-inline-link">
+                                    <img src="assets/images/esports/game-dota-2.svg" alt="">Dota 2
+                                </a>
+                            </li>
+                            <li>
+                                {{ icon(['M5 17H4C3.46957 17 2.96086 16.7893 2.58579 16.4142C2.21071 16.0391 2 15.5304 2 15V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H20C20.5304 3 21.0391 3.21071 21.4142 3.58579C21.7893 3.96086 22 4.46957 22 5V15C22 15.5304 21.7893 16.0391 21.4142 16.4142C21.0391 16.7893 20.5304 17 20 17H19M12 15L17 21H7L12 15Z']) }}2019 World Championship
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p>Fourth very days was air years likeness which two sixth. Land gathered. Them years face night deep gathering behold third replenish place won’t you without after fourth a don’t may. Dry. I first, isn’t. Own Divided male.</p>
+                    <p>In dominion. Cattle every for greater which all without greater give two man you’ll tree. Also beast behold and darkness was his deep him second winged earth lights doesn’t. Fill very you’ll night.</p>
+
+
+                    <h2>Videos</h2>
+                    <div class="row vgap">
+                        <div class="col-12 col-md-6">
+                            <div class="cyberpress-video">
+                                <iframe title="Lirik Plays DayZ | Episode 2 - Comradery" src="https://www.youtube.com/embed/nEcAQT9s_2w?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="cyberpress-video">
+                                <iframe title="Lirik Stream Highlights #112 - DayZ Is Back" src="https://www.youtube.com/embed/O4xXsjhBZeg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-auto-lg mpl-sidebar"{% if sr_widget %} {{ sr_widget }}{% endif %}>
+                {{ widget_search() }}
+                {{ widget_matches('Recent Matches') }}
+                {{ widget_match('Next Match') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

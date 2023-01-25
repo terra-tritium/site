@@ -1,0 +1,77 @@
+{% set page_title = 'eSports Tournaments' %}
+{% set header_image = bg_3 %}
+{% set header_small = 'true' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">Tournaments</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <div class="row hgap-lg vgap-lg">
+            <div class="col-lg mpl-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">eSports Tournaments</li>
+                    </ol>
+                </nav>
+
+                <div class="row vgap" data-sr="tournaments" data-sr-interval="100" data-sr-duration="1000" data-sr-distance="20">
+                    <div class="col-12 col-lg-6" data-sr-item="tournaments">
+                        <div class="cyberpress-tournament">
+                            <h2 class="cyberpress-tournament-title h4">
+                                <a href="esports-single-tournament.html">2019 World Championship</a>
+                            </h2>
+                            <ul class="cyberpress-tournament-info">
+                                <li>
+                                    {{ icon(['M16 2V6M8 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z']) }}August 1, 2019 - October 29, 2019
+                                </li>
+                                <li>
+                                    <a href="#" class="cyberpress-game-inline-link">
+                                        <img src="assets/images/esports/game-dota-2.svg" alt="">Dota 2
+                                    </a>
+                                </li>
+                                <li>{{ icon(['M20 12V22M20 12H12M20 12H22M20 22H4M20 22H12M4 22V12M4 22H12M4 12H12M4 12H2M2 7H22M2 7V12M2 7H7.5M22 7V12M22 7H12M22 7H16.5M22 12H12M2 12H12M12 22V12M12 7H7.5M12 7C12 7 11 2 7.5 2C6.83696 2 6.20107 2.26339 5.73223 2.73223C5.26339 3.20107 5 3.83696 5 4.5C5 5.16304 5.26339 5.79893 5.73223 6.26777C6.20107 6.73661 6.83696 7 7.5 7M12 7H16.5M12 7C12 7 13 2 16.5 2C17.163 2 17.7989 2.26339 18.2678 2.73223C18.7366 3.20107 19 3.83696 19 4.5C19 5.16304 18.7366 5.79893 18.2678 6.26777C17.7989 6.73661 17.163 7 16.5 7M12 7V12']) }}$75000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6" data-sr-item="tournaments">
+                        <div class="cyberpress-tournament">
+                            <h2 class="cyberpress-tournament-title h4">
+                                <a href="esports-single-tournament.html">Esports Championship Series Season 8</a>
+                            </h2>
+                            <ul class="cyberpress-tournament-info">
+                                <li>
+                                    {{ icon(['M16 2V6M8 2V6M3 10H21M5 4H19C20.1046 4 21 4.89543 21 6V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V6C3 4.89543 3.89543 4 5 4Z']) }}June 1, 2019 - October 31, 2019
+                                </li>
+                                <li>
+                                    <a href="#" class="cyberpress-game-inline-link">
+                                        <img src="assets/images/esports/game-cs-go.svg" alt="">Counter-Strike: Global Offensive
+                                    </a>
+                                </li>
+                                <li>{{ icon(['M20 12V22M20 12H12M20 12H22M20 22H4M20 22H12M4 22V12M4 22H12M4 12H12M4 12H2M2 7H22M2 7V12M2 7H7.5M22 7V12M22 7H12M22 7H16.5M22 12H12M2 12H12M12 22V12M12 7H7.5M12 7C12 7 11 2 7.5 2C6.83696 2 6.20107 2.26339 5.73223 2.73223C5.26339 3.20107 5 3.83696 5 4.5C5 5.16304 5.26339 5.79893 5.73223 6.26777C6.20107 6.73661 6.83696 7 7.5 7M12 7H16.5M12 7C12 7 13 2 16.5 2C17.163 2 17.7989 2.26339 18.2678 2.73223C18.7366 3.20107 19 3.83696 19 4.5C19 5.16304 18.7366 5.79893 18.2678 6.26777C17.7989 6.73661 17.163 7 16.5 7M12 7V12']) }}$125000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto-lg mpl-sidebar"{% if sr_widget %} {{ sr_widget }}{% endif %}>
+                {{ widget_search() }}
+                {{ widget_matches('Recent Matches') }}
+                {{ widget_match('Next Match') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

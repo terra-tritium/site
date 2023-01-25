@@ -1,0 +1,44 @@
+{% set page_title = 'Component Alerts' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <div class="alert" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-primary" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-success" role="alert">
+        <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-info" role="alert">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    <div class="alert alert-danger mb-60" role="alert">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+
+    <div class="alert alert-warning alert-dismissible mb-0" role="alert">
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+            {{ icon(['M18 6L6 18M6 6L18 18']) }}
+        </button>
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% set page_title = 'eSports Games' %}
+{% set header_image = bg_3 %}
+{% set header_small = 'true' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">Games</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <div class="row hgap-lg vgap-lg">
+            <div class="col-lg mpl-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">eSports Games</li>
+                    </ol>
+                </nav>
+
+                <div class="row vgap" data-sr="games" data-sr-interval="80" data-sr-duration="1000" data-sr-distance="20">
+                    {% macro game(name="", image="", href="#") %}
+                    <div class="col-12 col-md-6 col-xl-4" data-sr-item="games">
+                        <a class="cyberpress-game" href="{{ href }}">
+                            <span class="cyberpress-game-thumbnail">
+                                {{ img(image) }}
+                            </span>
+                            <span class="cyberpress-game-title h5">{{ name }}</span>
+                        </a>
+                    </div>
+                    {% endmacro %}
+                    {{ game('Dota 2', 'esports/game-dota-2.svg') }}
+                    {{ game('Fortnite', 'esports/game-fortnite.svg') }}
+                    {{ game('Counter-Strike: Global Offensive', 'esports/game-cs-go.svg') }}
+                    {{ game('League of Legends', 'esports/game-lol.svg') }}
+                    {{ game('Dota Underlords', 'esports/game-dota-underlords.svg') }}
+                    {{ game('PlayerUnknown’s Battlegrounds', 'esports/game-pubg.svg') }}
+                    {{ game('Apex Legends', 'esports/game-apex-legends.svg') }}
+                    {{ game('Warface', 'esports/game-warface.svg') }}
+                    {{ game('Overwatch', 'esports/game-overwatch.svg') }}
+                    {{ game('Hearthstone', 'esports/game-hearthstone.svg') }}
+                    {{ game('Fifa 20', 'esports/game-fifa.svg') }}
+                    {{ game('Quake Champions', 'esports/game-quake.svg') }}
+                </div>
+            </div>
+
+            <div class="col-auto-lg mpl-sidebar"{% if sr_widget %} {{ sr_widget }}{% endif %}>
+                {{ widget_search() }}
+                {{ widget_matches('Recent Matches') }}
+                {{ widget_match('Next Match') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

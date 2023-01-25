@@ -1,0 +1,45 @@
+{% set page_title = 'Component Icon Box' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="mpl-icon-box">
+                <div class="mpl-icon-box-icon">
+                    {{ icon(['M3 14H10V21H3V14Z', 'M3 3H10V10H3V3Z', 'M14 3H21V10H14V3Z', 'M14 14H21V21H14V14Z']) }}
+                </div>
+                <div class="mpl-icon-box-content">MonsterPlay can be used for simple blogging, not only full-stack gaming template</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="mpl-icon-box">
+                <div class="mpl-icon-box-icon">
+                    {{ icon(['M12 21.9979C11.6489 21.9979 11.304 21.9055 11 21.73L4 17.73C3.69626 17.5546 3.44398 17.3025 3.26846 16.9988C3.09294 16.6952 3.00036 16.3507 3 16V7.99999C3.00036 7.64927 3.09294 7.3048 3.26846 7.00116C3.27454 6.99064 3.28071 6.9802 3.28696 6.96981M12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16V7.99999C20.9996 7.64927 20.9071 7.3048 20.7315 7.00116C20.7255 6.99064 20.7193 6.98019 20.713 6.96981M12 21.9979V12.01M12 12.01L3.28696 6.96981M12 12.01L20.713 6.96981M3.28696 6.96981C3.28894 6.96653 3.29092 6.96326 3.29292 6.95999M3.28696 6.96981L3.29292 6.95999M20.713 6.96981C20.7111 6.96653 20.7091 6.96326 20.7071 6.95999M20.713 6.96981L20.7071 6.95999M3.29292 6.95999C3.46707 6.6747 3.7101 6.43737 4 6.26999L11 2.26999C11.304 2.09446 11.6489 2.00204 12 2.00204C12.3511 2.00204 12.696 2.09446 13 2.26999L20 6.26999C20.2899 6.43737 20.5329 6.6747 20.7071 6.95999']) }}
+                </div>
+                <div class="mpl-icon-box-content">MonsterPlay can be used for simple blogging, not only full-stack gaming template</div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="mpl-icon-box">
+                <div class="mpl-icon-box-icon">
+                    {{ icon(['M2 17L12 22L22 17M2 12L12 17L22 12M12 2L2 7L12 12L22 7L12 2Z']) }}
+                </div>
+                <div class="mpl-icon-box-content">MonsterPlay can be used for simple blogging, not only full-stack gaming template</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% set page_title = 'Blog 3' %}
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10" data-sr="blog-banner" data-sr-interval="200" data-sr-duration="1200" data-sr-distance="20">
+                <h1 class="display-1" data-sr-item="blog-banner">Blog</h1>
+                <p class="lead mb-0" data-sr-item="blog-banner">"Fruit moveth Lights may deep their, morning abundantly open first bring wherein. That over creeping Saying herb above, place wherein."</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <div class="row vgap-md" data-sr="post" data-sr-duration="1000" data-sr-interval="100" data-sr-distance="10">
+            <div class="col-12 col-sm-6 col-md-4" data-sr-item="post">
+                {{ post_vertical(blog_1.image.md, blog_1.name, blog_1.date, href="blog-post-gallery.html") }}
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-sr-item="post">
+                {{ post_vertical(blog_2.image.md, blog_2.name, blog_2.date, href="blog-post-carousel.html") }}
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-sr-item="post">
+                {{ post_vertical(blog_3.image.md, blog_3.name, blog_3.date, href="blog-post-simple.html") }}
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-sr-item="post">
+                {{ post_vertical(blog_4.image, blog_4.name, blog_4.date, href="blog-post-gallery.html") }}
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-sr-item="post">
+                {{ post_vertical(blog_5.image, blog_5.name, blog_5.date, href="blog-post-carousel.html") }}
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-sr-item="post">
+                {{ post_vertical(blog_6.image.md, blog_6.name, blog_6.date, href="blog-post-simple.html") }}
+            </div>
+            <div class="col-12 col-sm-6 col-md-4" data-sr-item="post">
+                {{ post_vertical(blog_7.image, blog_7.name, blog_7.date, href="blog-post-gallery.html") }}
+            </div>
+        </div>
+
+        <ul class="pagination mt-60 mb-0" data-sr="pagination" data-sr-interval="100" data-sr-duration="800" data-sr-distance="10">
+            <li class="page-item active" data-sr-item="pagination">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item" data-sr-item="pagination">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item" data-sr-item="pagination">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item" data-sr-item="pagination">
+                <a href="#" class="page-link">4</a>
+            </li>
+            <li class="page-item" data-sr-item="pagination">
+                <a href="#" class="page-link next">Next</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

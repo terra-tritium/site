@@ -1,0 +1,42 @@
+{% set page_title = 'Component Reviews' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <div class="row vertical-gutter">
+        <div class="col-lg-4">
+            {{ review(
+                user_1.img,
+                "Curae, sodales facilisi, lacus fringilla ridiculus cras, sed, class class. Class per faucibus eget Aliquam quam interdum vehicula Pretium dolor. Nunc nascetur urna phasellus.",
+                user_1.name
+            ) }}
+        </div>
+        <div class="col-lg-4">
+            {{ review(
+                user_2.img,
+                "Lacus Ut varius viverra vestibulum eleifend consectetuer proin accumsan pretium dis ultrices, hendrerit platea. Suspendisse Nunc. Ligula phasellus iaculis torquent.",
+                user_2.name
+            ) }}
+        </div>
+        <div class="col-lg-4">
+            {{ review(
+                user_3.img,
+                "Purus purus penatibus tempus est risus elit convallis ultrices adipiscing et mollis fames vivamus.",
+                user_3.name
+            ) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

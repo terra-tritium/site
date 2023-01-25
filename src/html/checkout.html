@@ -1,0 +1,106 @@
+{% set page_title = 'Checkout' %}
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">Checkout</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <form action="#" class="row hgap-lg vgap-lg">
+            <div class="col-12 col-lg-8 mpl-shop">
+                <h2>Billing Details</h2>
+
+                <!-- Country -->
+                <div class="row vgap" data-sr="checkout" data-sr-duration="1000" data-sr-distance="20">
+                    <div class="col-12" data-sr-item="checkout">
+                        {{ form_select_country('billing_country', 'Country', id="billing_country") }}
+                    </div>
+                    <div class="col-12 col-md-6" data-sr-item="checkout">
+                        {{ form_control('billing_firstname', 'text', 'First Name:', 'billing_firstname', 'First Name') }}
+                    </div>
+                    <div class="col-12 col-md-6" data-sr-item="checkout">
+                        {{ form_control('billing_lastname', 'text', 'Last Name:', 'billing_lastname', 'Last Name') }}
+                    </div>
+                    <div class="col-12 col-lg-6" data-sr-item="checkout">
+                        {{ form_control('billing_street', 'text', 'Address:', 'billing_street', 'Street Address') }}
+                    </div>
+                    <div class="col-12 col-md-6" data-sr-item="checkout">
+                        {{ form_control('billing_apartment', 'text', 'Apartment:', 'billing_apartment', 'Apartment, suite, unit etc.') }}
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" data-sr-item="checkout">
+                        {{ form_control('billing_city', 'text', 'City:', 'billing_city', 'City') }}
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" data-sr-item="checkout">
+                        {{ form_control('billing_country_input', 'text', 'Country:', 'billing_country_input', 'Country') }}
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" data-sr-item="checkout">
+                        {{ form_control('billing_postcode', 'text', 'Postcode:', 'billing_postcode', 'Postcode') }}
+                    </div>
+                    <div class="col-12 col-md-6" data-sr-item="checkout">
+                        {{ form_control('billing_email', 'email', 'Email:', 'billing_email', 'Email') }}
+                    </div>
+                    <div class="col-12 col-md-6" data-sr-item="checkout">
+                        {{ form_control('billing_phone', 'text', 'Phone:', 'billing_phone', 'Phone') }}
+                    </div>
+                    <div class="col-12" data-sr-item="checkout">
+                        {{ form_textarea('billing_info', 'Additional Info:', 'billing_info', 'Additional Info') }}
+                    </div>
+                    <div class="col-12" data-sr-item="checkout">
+                        {{ form_checkbox('create_account', 'Create an account?', 'create_account') }}
+                    </div>
+                </div>
+
+                <button class="btn btn-md mt-35" data-sr data-sr-duration="1200" data-sr-distance="10">Place Order</button>
+            </div>
+            <div class="col-12 col-lg-4" data-sr="checkout" data-sr-duration="1200" data-sr-distance="10">
+                <h4 data-sr-item="checkout">Your Products in Cart</h4>
+
+                {{ product_horizontal_checkout('Skyrim', '$11.99', href='shop-product.html', data="data-sr-item=checkout") }}
+                {{ product_horizontal_checkout('Dragons Dogma', '$34.99', href='shop-product.html', data="data-sr-item=checkout") }}
+                {{ product_horizontal_checkout('The Witcher', '$14.99', href='shop-product.html', data="data-sr-item=checkout") }}
+
+
+                <h4 class="mt-60" data-sr-item="checkout">Payment Type</h4>
+                {{ form_radio('payment_type', 'Direct Bank Transfer', 'payment_radio_1', data="data-sr-item=checkout") }}
+                {{ form_radio('payment_type', 'Cheque Payment', 'payment_radio_2', data="data-sr-item=checkout") }}
+                {{ form_radio('payment_type', 'PayPal', 'payment_radio_3', 'true', data="data-sr-item=checkout") }}
+
+                <table class="table mpl-table-responsive mpl-table-shop-total mt-60" data-sr-item="checkout">
+                    <tbody>
+                        <tr>
+                            <th>Subtotal</th>
+                            <td data-title="Subtotal">$204.99</td>
+                        </tr>
+                        <tr>
+                            <th>Shipping</th>
+                            <td data-title="Shipping">
+                                <ul class="mpl-list list-vgap-xs">
+                                    <li>
+                                        {{ form_radio('shipping', 'Free Shipping', 'free_shipping', 'true') }}
+                                    </li>
+                                    <li>
+                                        {{ form_radio('shipping', 'Flat Shipping: <strong>$49.00</strong>', 'flat_shipping') }}
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td data-title="Total">$204.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

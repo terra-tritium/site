@@ -1,0 +1,23 @@
+{% set page_title = 'Component Number Box' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <div class="mpl-counter-box">
+        <div class="mpl-counter-box-number h4">61</div>
+        <div class="mpl-counter-box-content">MonsterPlay can be used for simple blogging, not only full-stack gaming template</div>
+    </div>
+</div>
+{% endblock %}

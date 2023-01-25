@@ -1,0 +1,142 @@
+{% set page_title = 'Call of Shoooter' %}
+{% set header_image = "assets/images/shooter/bg-banner-1.jpg" %}
+
+{% extends 'layouts/layout-shooter.html' %}
+
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9" data-sr="banner" data-sr-interval="200" data-sr-duration="1200" data-sr-distance="20">
+                <h1 class="display-1 text-uppercase" data-sr-item="banner">Call of Shoooter</h1>
+                <p class="lead" data-sr-item="banner">
+                    Multiply. He fruitful shall whales without under god so you're saw have Land. Don't dominion doesn't fifth you image from.
+                </p>
+                <a class="btn btn-md" href="https://themeforest.net/item/monsterplay-game-template-based-on-bootstrap/11306207?ref=_nK" data-sr-item="banner">
+                    Watch The Trailer
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="mpl-box-sm bg-light">
+    <div class="container">
+        <div class="row hgap-md vgap-md" data-sr="posts" data-sr-interval="120" data-sr-duration="1000" data-sr-distance="20">
+            <div class="col-12 col-md-6 col-lg-4" data-sr-item="posts">
+                {{ post_overlay(blog_1.image.md, blog_1.name, texts=["Hath every meat life creature were gathering i. Third darkness."], href='shooter-blog-post.html') }}
+            </div>
+            <div class="col-12 col-md-6 col-lg-4" data-sr-item="posts">
+                {{ post_overlay(blog_2.image.md, blog_2.name, texts=["Hath every meat life creature were gathering i. Third darkness."], href='shooter-blog-post.html') }}
+            </div>
+            <div class="col-12 col-md-6 col-lg-4" data-sr-item="posts">
+                {{ post_overlay(blog_3.image.md, blog_3.name, texts=["Hath every meat life creature were gathering i. Third darkness."], href='shooter-blog-post.html') }}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="mpl-banner big{{ ' mpl-banner-parallax' if content_parallax }}">
+    <div class="mpl-image"{{ (' data-speed="' + content_parallax_speed + '"') | safe if content_parallax }}>
+        <img class="jarallax-img" src="assets/images/shooter/bg-1.jpg" alt="">
+    </div>
+
+    <div class="mpl-banner-content mpl-box-lg container">
+        <div class="row">
+            <div class="col-12 col-lg-7" data-sr="text" data-sr-interval="100" data-sr-duration="1000" data-sr-distance="20">
+                <h2 class="display-2 text-uppercase" data-sr-item="text">Realistic Battles</h2>
+                <p class="mb-40" data-sr-item="text">Eleifend sem ipsum conubia euismod potenti ante ad sem sed, dictumst hymenaeos torquent quis. Class leo. Odio orci velit nulla habitasse conubia tempor eleifend dui suscipit mauris eget mollis</p>
+                <a href="#" class="btn btn-md" data-sr-item="text">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="mpl-box-lg">
+    <div class="container">
+        <div class="row hgap-lg vgap-lg align-items-center" data-sr="coming-soon" data-sr-interval="120" data-sr-duration="1000" data-sr-distance="20">
+            <div class="col-12 col-lg-6">
+                <h2 class="display-2 text-uppercase" data-sr-item="coming-soon">The True Emotions</h2>
+                <p class="mb-40" data-sr-item="coming-soon">Green may kind abundantly years heaven you'll fruitful That heaven. Behold saw called life sea you. Air fish blessed under.</p>
+                <div class="mpl-countdown h4" data-end="2022-11-21 12:00" data-timezone="EST" data-sr-item="coming-soon"></div>
+            </div>
+            <div class="col-12 col-lg-6" data-sr-item="coming-soon">
+                <a class="mpl-gallery-item" href="assets/images/shooter/coming-soon-full.jpg" data-fancybox="gallery">
+                    {{ img('shooter/coming-soon.jpg') }}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="mpl-banner big{{ ' mpl-banner-parallax' if content_parallax }}" id="pricing">
+    <div class="mpl-image"{{ (' data-speed="' + content_parallax_speed + '"') | safe if content_parallax }}>
+        <img class="jarallax-img" src="assets/images/shooter/bg-2.jpg" alt="">
+    </div>
+
+    <div class="mpl-banner-content mpl-box-lg container">
+        <div class="row vgap align-items-center" data-sr="pricing" data-sr-interval="200" data-sr-duration="1200" data-sr-distance="20">
+            <div class="col-12 col-md-6 col-xl-4" data-sr-item="pricing">
+                {{ pricing(
+                    'Free Trial', '', "Morning isn't second the seasons evening earth the brought",
+                    ['5 Missions', '5 Hours Gameplay', '1 Skin', '1400 Achievement Types', 'Zombie Mode'],
+                    'Download', 'btn-default'
+                ) }}
+            </div>
+            <div class="col-12 col-md-6 col-xl-4" data-sr-item="pricing">
+                {{ pricing(
+                    'Premium', '$199', "Morning isn't second the seasons evening earth the brought",
+                    ['50 Missions + Bonus', ' 200 Hours Gameplay', '15 Skins', '1400 Achievement Types', 'Zombie Mode', 'Battle Royale Mode', 'Streaming Platform'],
+                    'Buy Now', 'btn-brand'
+                ) }}
+            </div>
+            <div class="col-12 col-md-6 col-xl-4" data-sr-item="pricing">
+                {{ pricing(
+                    'Standard', '$59', "Morning isn't second the seasons evening earth the brought",
+                    ['50 Missions', '200 Hours Gameplay', '15 Skins', '1400 Achievement Types', 'Zombie Mode'],
+                    'Buy Now', 'btn-default'
+                ) }}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block javascript %}
+<script>
+    $('.mpl-countdown').each(function () {
+        const $this = $(this);
+        const tz = $this.attr('data-timezone');
+        let end = $this.attr('data-end');
+        end = moment.tz(end, tz).toDate();
+
+        $this.countdown(end, function (event) {
+            $this.html(event.strftime([
+                '<div class="mpl-countdown-item">',
+                    '<span>Days</span>',
+                    '<span><span>%D</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Hours</span>',
+                    '<span><span>%H</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Minutes</span>',
+                    '<span><span>%M</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Seconds</span>',
+                    '<span><span>%S</span></span>',
+                '</div>'
+            ].join('')));
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% set page_title = 'Component Countdown' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <!-- see countdown init in bottom of the page -->
+    <div class="mpl-countdown h4" data-end="2022-11-21 12:00" data-timezone="EST"></div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script>
+    $('.mpl-countdown').each(function () {
+        const $this = $(this);
+        const tz = $this.attr('data-timezone');
+        let end = $this.attr('data-end');
+        end = moment.tz(end, tz).toDate();
+
+        $this.countdown(end, function (event) {
+            $this.html(event.strftime([
+                '<div class="mpl-countdown-item">',
+                    '<span>Days</span>',
+                    '<span><span>%D</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Hours</span>',
+                    '<span><span>%H</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Minutes</span>',
+                    '<span><span>%M</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Seconds</span>',
+                    '<span><span>%S</span></span>',
+                '</div>'
+            ].join('')));
+        });
+    });
+</script>
+{% endblock %}

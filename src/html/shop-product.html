@@ -1,0 +1,204 @@
+{% set page_title = product_2.name %}
+{% set header_show = false %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-30">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="shop-sidebar-right.html">Shop</a></li>
+                <li class="breadcrumb-item active">{{ product_2.name }}</li>
+            </ol>
+        </nav>
+
+        <div class="row hgap-lg vgap-lg mb-0">
+            <div class="col-lg-7">
+                <div class="mpl-product-gallery">
+                    <a class="mpl-gallery-item" href="assets/images/{{ product_2.image.full }}" data-fancybox="gallery" data-animation-effect="fade">
+                        {{ img(product_2.image.lg) }}
+                        {{ icon(['M8 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V8M21 8V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3H16M16 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V16M3 16V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H8']) }}
+                    </a>
+
+                    {{ comment_carousel() }}
+                    <div class="mpl-carousel" data-gap="10" data-scrollbar="true" data-slides="1" data-breakpoints="767:4,440:3,320:2">
+                        <a class="mpl-gallery-item" href="assets/images/{{ product_2.image.b.full }}" data-fancybox="gallery" data-animation-effect="fade">
+                            {{ img(product_2.image.b.md) }}
+                            {{ icon(['M8 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V8M21 8V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3H16M16 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V16M3 16V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H8']) }}
+                        </a>
+                        <a class="mpl-gallery-item" href="assets/images/{{ product_2.image.c.full }}" data-fancybox="gallery" data-animation-effect="fade">
+                            {{ img(product_2.image.c.md) }}
+                            {{ icon(['M8 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V8M21 8V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3H16M16 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V16M3 16V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H8']) }}
+                        </a>
+                        <a class="mpl-gallery-item" href="assets/images/{{ product_2.image.d.full }}" data-fancybox="gallery" data-animation-effect="fade">
+                            {{ img(product_2.image.d.md) }}
+                            {{ icon(['M8 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V8M21 8V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3H16M16 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V16M3 16V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H8']) }}
+                        </a>
+                        <a class="mpl-gallery-item" href="assets/images/{{ product_2.image.e.full }}" data-fancybox="gallery" data-animation-effect="fade">
+                            {{ img(product_2.image.e.md) }}
+                            {{ icon(['M8 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V8M21 8V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3H16M16 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V16M3 16V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H8']) }}
+                        </a>
+                        <a class="mpl-gallery-item" href="assets/images/{{ product_2.image.f.full }}" data-fancybox="gallery" data-animation-effect="fade">
+                            {{ img(product_2.image.f.md) }}
+                            {{ icon(['M8 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V8M21 8V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3H16M16 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V16M3 16V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H8']) }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5" data-sr="product-main" data-sr-interval="120" data-sr-duration="1000" data-sr-distance="20">
+                <h1 class="mb-10" data-sr-item="product-main">{{ product_2.name }}</h1>
+
+                <div class="row align-items-center hgap-sm vgap-sm" data-sr-item="product-main">
+                    <div class="col-auto">{{ rating('100%') }}</div>
+                    <div class="col-auto">(3 customer review)</div>
+                </div>
+
+                <h3 class="mt-30" data-sr-item="product-main">$59.00</h3>
+
+                <p data-sr-item="product-main">
+                    Yielding from Face, form over, fowl his so own Likeness god stars, had form two thing dry spirit they're there. Him. Moving heaven had beast the waters. Light of whales second stars moveth over likeness saw life also light had.
+                </p>
+
+                <div class="row hgap-sm vgap-sm align-items-center mt-30">
+                    <div class="col-2" data-sr-item="product-main">
+                        Color
+                    </div>
+                    <div class="col-7" data-sr-item="product-main">
+                        <select class="form-select form-select-sm">
+                            <option selected>Choose an option</option>
+                            <option>White</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                        </select>
+                        <span class="form-control-bg"></span>
+                    </div>
+                </div>
+                <div class="row hgap-sm vgap-sm align-items-center mt-40">
+                    <div class="col-auto" data-sr-item="product-main">
+                        <input class="mpl-touchspin form-control" type="text" value="1" min="1" max="99">
+                    </div>
+                    <div class="col-auto" data-sr-item="product-main">
+                        <a class="btn btn-md btn-brand" href="#">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="nav-item"><a href="#description" class="nav-link active" aria-controls="description" role="tab" data-bs-toggle="tab" aria-selected="false">Description</a></li>
+                <li role="presentation" class="nav-item"><a href="#additionalInformation" class="nav-link" aria-controls="additionalInformation" role="tab" data-bs-toggle="tab" aria-selected="true">Additional Information</a></li>
+                <li role="presentation" class="nav-item"><a href="#reviews" class="nav-link" aria-controls="reviews" role="tab" data-bs-toggle="tab" aria-selected="false">Reviews (3)</a></li>
+            </ul>
+
+            <div class="tab-content pb-0">
+                <div role="tabpanel" class="tab-pane fade show active" id="description">
+                    <article class="mpl-shop">
+                        <p>
+                            Nonne vides quid sit? Tu es ... Jesse me respice. Tu ... blowfish sunt. A blowfish! Cogitare. Statura pusillus, nec sapientium panem, nec artificum. Sed predators facile prædam blowfish secretum telum non se habet. Non ille? Quid faciam blowfish, Isai. Blowfish quid faciat? In blowfish inflat, purus?
+                        </p>
+                        <p>
+                            Blowfish librantur in se quatuor, quinquies maior quam normalis, et quare? Quare id faciam? Ut terrorem facit, qui quid. Terrent! Ut alter, scarier pisces agminis off. Et quod tu es? Vos blowfish. Tu iustus in omnibus visio. Vides ... suus ' suus 'non aliud aerem. Nunc ... qui cum partibus blowfish Isai? Tu damnare ius. Vos blowfish. Dicere iterum. Dicere illam quasi velis eam. Es BLOWFISH!
+                        </p>
+                        <p>
+                            Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.
+                        </p>
+                        <p class="mb-0">
+                            Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant. Istuc quod opus non est. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere. Quorum duo te mihi videtur.
+                        </p>
+                    </article>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="additionalInformation">
+                    <table class="table mpl-table-product-information mb-0">
+                        <tbody>
+                            <tr>
+                                <th>Colour</th>
+                                <td>Black</td>
+                            </tr>
+                            <tr>
+                                <th>Headphone Fit</th>
+                                <td>Over-Ear</td>
+                            </tr>
+                            <tr>
+                                <th>Item Dimension</th>
+                                <td>7.08 x 3.94 x 10.25 in</td>
+                            </tr>
+                            <tr>
+                                <th>Item Weight</th>
+                                <td>7.84 ounces</td>
+                            </tr>
+                            <tr>
+                                <th>Special Feature</th>
+                                <td>noise-cancellation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="reviews">
+                    <ul class="list-unstyled list-vgap-md">
+                        <li>
+                            {{ media_review(
+                                user_1.img, user_1.name, 'January 8, 2021', '',
+                                ["Winged seed sea male forth us blessed second our midst male shall dominion seasons wherein. Land in behold upon place lesser bearing. You're his, unto, face whose may divided one."]
+                            ) }}
+                        </li>
+                        <li>
+                            {{ media_review(
+                                user_4.img, user_4.name, 'January 6, 2021', '80%',
+                                ["Night. The, great us thing place give sixth let a greater life don't fruit first unto, for two. May earth. Image fruitful. Also without Life kind waters, fish cattle.", "Won't spirit heaven heaven void doesn't spirit all grass open above. Heaven appear. Created. Forth gathered darkness Evening set god sea."]
+                            ) }}
+                        </li>
+                        <li>
+                            {{ media_review(
+                                user_5.img, user_5.name, 'January 5, 2021', '80%',
+                                ["Image itself morning heaven i moving you're two likeness Given."]
+                            ) }}
+                        </li>
+                    </ul>
+
+                    <h2 class="mt-60">Add a Review</h2>
+                    <form action="#" class="mb-0">
+                        <div class="row vgap">
+                            <div class="col-12 col-sm-6">
+                                {{ form_control('username', 'text', '', 'username', 'Your Name') }}
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                {{ form_control('email', 'email', '', 'email', 'Your Email') }}
+                            </div>
+                            <div class="col-12">
+                                {{ form_textarea('message', '', 'message', 'Your Review') }}
+                            </div>
+                            <div class="col-12">
+                                {{ rating_dynamic('review') }}
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-md">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Related -->
+<div class="mpl-box-sm bg-light">
+    <div class="container">
+        <h2>Related Products</h2>
+
+        {{ comment_carousel() }}
+        <div class="mpl-carousel" data-gap="10" data-loop="true" data-arrows="true" data-slides="1" data-breakpoints="992:3,767:2">
+            {{ product_overlay(product_1.image.lg, product_1.name, '90%', href='shop-product.html') }}
+            {{ product_overlay(product_3.image.lg, product_3.name, '80%', href='shop-product.html') }}
+            {{ product_overlay(product_5.image, product_5.name, '90%', href='shop-product.html') }}
+            {{ product_overlay(product_6.image, product_6.name, '90%', href='shop-product.html') }}
+            {{ product_overlay(product_4.image, product_4.name, '90%', href='shop-product.html') }}
+        </div>
+    </div>
+</div>
+<!-- /Related -->
+{% endblock %}

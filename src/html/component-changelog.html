@@ -1,0 +1,80 @@
+{% set page_title = 'Component Changelog' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <div class="mpl-changelog">
+        <div>
+            <div class="mpl-changelog-version">1.2.0</div>
+            <div class="mpl-changelog-date h5">1 September 2019</div>
+        </div>
+        <ul class="mpl-changelog-more">
+            <li>
+                <div class="mpl-changelog mpl-changelog-success">
+                    <div class="mpl-changelog-badge">ADD</div>
+                    <div class="mpl-changelog-info">Changelog block</div>
+                </div>
+            </li>
+            <li>
+                <div class="mpl-changelog mpl-changelog-success">
+                    <div class="mpl-changelog-badge">ADD</div>
+                    <div class="mpl-changelog-info">Widgetized Area block</div>
+                </div>
+            </li>
+            <li>
+                <div class="mpl-changelog mpl-changelog-warning">
+                    <div class="mpl-changelog-badge">ADD</div>
+                    <div class="mpl-changelog-info">Some block icons</div>
+                </div>
+            </li>
+            <li>
+                <div class="mpl-changelog mpl-changelog-primary">
+                    <div class="mpl-changelog-badge">FIX</div>
+                    <div class="mpl-changelog-info">Fixed testimonials</div>
+                </div>
+            </li>
+            <li>...</li>
+        </ul>
+    </div>
+
+    <div class="mpl-changelog">
+        <div>
+            <div class="mpl-changelog-version">1.1.4</div>
+            <div class="mpl-changelog-date h5">16 September 2019</div>
+        </div>
+        <ul class="mpl-changelog-more">
+            <li>
+                <div class="mpl-changelog mpl-changelog-success">
+                    <div class="mpl-changelog-badge">ADD</div>
+                    <div class="mpl-changelog-info">Option collapseOne to Accordion block</div>
+                </div>
+            </li>
+            <li>
+                <div class="mpl-changelog mpl-changelog-primary">
+                    <div class="mpl-changelog-badge">FIX</div>
+                    <div class="mpl-changelog-info">Grid column responsive settings (added tabs for each device)</div>
+                </div>
+            </li>
+            <li>
+                <div class="mpl-changelog mpl-changelog-danger">
+                    <div class="mpl-changelog-badge">DEL</div>
+                    <div class="mpl-changelog-info">icons to use {{ '<svg\>' }} instead of {{ '<img>' }}</div>
+                </div>
+            </li>
+            <li>...</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

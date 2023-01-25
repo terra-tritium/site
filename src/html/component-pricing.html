@@ -1,0 +1,42 @@
+{% set page_title = 'Component Pricing' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <div class="row vgap">
+        <div class="col-12 col-md-6 col-xl-4">
+            {{ pricing(
+                'Standard', '$0', "Morning isn't second the seasons evening earth the brought",
+                ['Backup Services', 'Free Upgrades', '24/7 Support', 'Backup Services', 'Free Upgrades'],
+                'Download', 'btn-default'
+            ) }}
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+            {{ pricing(
+                'Corporate', '$35', "Morning isn't second the seasons evening earth the brought",
+                ['Backup Services', 'Free Upgrades', '24/7 Support', 'Backup Services', 'Free Upgrades'],
+                'Buy Now', 'btn-brand'
+            ) }}
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+            {{ pricing(
+                'Business', '$25', "Morning isn't second the seasons evening earth the brought",
+                ['Backup Services', 'Free Upgrades', '24/7 Support', 'Backup Services', 'Free Upgrades'],
+                'Buy Now', 'btn-default'
+            ) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

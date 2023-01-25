@@ -1,0 +1,123 @@
+{% set header_title = 'Topics' %}
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">Topics</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+{% set icon_star = icon(['M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z']) %}
+{% set icon_folder = icon(['M22 19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H9L11 6H20C20.5304 6 21.0391 6.21071 21.4142 6.58579C21.7893 6.96086 22 7.46957 22 8V19Z']) %}
+{% set icon_lock = icon(['M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11M5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13C3 11.8954 3.89543 11 5 11Z']) %}
+
+
+<div class="mpl-box-md">
+    <div class="container">
+        <div class="row hgap-lg vgap-lg">
+            <div class="col-lg mpl-content">
+                <nav class="mb-60" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="forums.html">Forums</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Games</li>
+                    </ol>
+                </nav>
+
+                <!-- Forums List -->
+                <ul class="mpl-forum" data-sr="forum" data-sr-duration="1000" data-sr-distance="20">
+                    <li class="mpl-forum-header" data-sr-item="forum">
+                        <ul>
+                            <li class="cell-icon"></li>
+                            <li class="cell-info">Topic</li>
+                            <li class="cell-topic-count">Voices</li>
+                            <li class="cell-reply-count">Posts</li>
+                            <li class="cell-freshness">Freshness</li>
+                        </ul>
+                    </li>
+
+                    <li class="mpl-forum-body">
+                        <ul class="mpl-forum-sticky" data-sr-item="forum">
+                            <li class="cell-icon">{{ icon_star }}</li>
+                            <li class="cell-info">
+                                <a href="forums-single-topic.html" class="title h4">Sticky Topic</a>
+                                <div class="description">
+                                    <span>Started by: <a href="#">John Doe</a></span>
+                                </div>
+                            </li>
+                            <li class="cell-topic-count">7</li>
+                            <li class="cell-reply-count">21</li>
+                            <li class="cell-freshness">
+                                <a href="#">2 year, 9 months ago</a>
+                                <span>Last comment: <a href="#">Kristen Bradley</a></span>
+                            </li>
+                        </ul>
+
+                        <ul data-sr-item="forum">
+                            <li class="cell-icon">{{ icon_folder }}</li>
+                            <li class="cell-info">
+                                <a href="forums-single-topic.html" class="title h4">Normal Topic</a>
+                                <div class="description">
+                                    <span>Started by: <a href="#">John Doe</a></span>
+                                </div>
+                            </li>
+                            <li class="cell-topic-count">7</li>
+                            <li class="cell-reply-count">21</li>
+                            <li class="cell-freshness">
+                                <a href="#">2 year, 9 months ago</a>
+                                <span>Last comment: <a href="#">Kristen Bradley</a></span>
+                            </li>
+                        </ul>
+
+                        <ul data-sr-item="forum">
+                            <li class="cell-icon">{{ icon_folder }}</li>
+                            <li class="cell-info">
+                                <a href="forums-single-topic.html" class="title h4">Normal Topic</a>
+                                <div class="description">
+                                    <span>Started by: <a href="#">John Doe</a></span>
+                                </div>
+                            </li>
+                            <li class="cell-topic-count">7</li>
+                            <li class="cell-reply-count">21</li>
+                            <li class="cell-freshness">
+                                <a href="#">2 year, 9 months ago</a>
+                                <span>Last comment: <a href="#">Kristen Bradley</a></span>
+                            </li>
+                        </ul>
+
+                        <ul class="mpl-forum-closed" data-sr-item="forum">
+                            <li class="cell-icon">{{ icon_lock }}</li>
+                            <li class="cell-info">
+                                <a href="forums-single-topic.html" class="title h4">Closed Topic</a>
+                                <div class="description">
+                                    <span>Started by: <a href="#">John Doe</a></span>
+                                </div>
+                            </li>
+                            <li class="cell-topic-count">7</li>
+                            <li class="cell-reply-count">21</li>
+                            <li class="cell-freshness">
+                                <a href="#">2 year, 9 months ago</a>
+                                <span>Last comment: <a href="#">Kristen Bradley</a></span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-auto-lg mpl-sidebar"{% if sr_widget %} {{ sr_widget }}{% endif %}>
+                {{ widget_search() }}
+                {{ widget_categories('Categories', [['All', '#'], ['Audio', '#'], ['Photo', '#'], ['Video', '#'], ['Controllers', '#']]) }}
+                {{ widget_products('Popular Products') }}
+                {{ widget_instagram('Instagram') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% set main_style_file = 'monsterplay-gamer' %}
+{% set header_parallax = false %}
+{% set footer_parallax = false %}
+{% set footer_bg = "assets/images/gamer/bg-footer.jpg" %}
+{% set logo = 'assets/images/logo-gamer.svg' %}
+{% set nav_social_game = true %}
+{% set nav_search = false %}
+{% set nav_cart = false %}
+{% set nav_login = false %}
+
+{% set navigation_right = false %}
+{% set navigation = {
+    "gamer-index.html": {
+        "name": "Demos",
+        "sub": {
+            "dark-index.html": {
+                "name": "Main"
+            },
+            "shooter-index.html": {
+                "name": "Shooter"
+            },
+            "gamer-index.html": {
+                "name": "Gamer"
+            },
+            "studio-index.html": {
+                "name": "Studio"
+            }
+        }
+    }
+} %}
+
+{% extends 'layouts/layout-1.html' %}

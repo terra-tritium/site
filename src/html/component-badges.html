@@ -1,0 +1,36 @@
+{% set page_title = 'Component Badges' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <div class="mpl-snippet">
+        <h1>Example heading <span class="badge badge-brand">New</span></h1>
+        <h2>Example heading <span class="badge badge-brand">New</span></h2>
+        <h3>Example heading <span class="badge badge-brand">New</span></h3>
+        <h4>Example heading <span class="badge badge-brand">New</span></h4>
+        <h5>Example heading <span class="badge badge-brand">New</span></h5>
+        <h6 class="mb-0">Example heading <span class="badge badge-brand">New</span></h6>
+    </div>
+
+    <div class="mpl-snippet">
+        <span class="badge badge-brand">Brand</span>
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-danger">Danger</span>
+    </div>
+</div>
+{% endblock %}

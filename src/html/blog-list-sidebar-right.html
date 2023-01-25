@@ -1,0 +1,95 @@
+{% set page_title = 'Blog 1' %}
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10" data-sr="blog-banner" data-sr-interval="200" data-sr-duration="1200" data-sr-distance="20">
+                <h1 class="display-1" data-sr-item="blog-banner">Blog</h1>
+                <p class="lead mb-0" data-sr-item="blog-banner">"Have beginning wherein spirit. Bearing unto. To after light. Good image can't without hath fly beast him fish firmament fish Face waters fly unto spirit i doesn't one waters divide."</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <div class="row hgap-lg vgap-lg">
+            <div class="col mpl-content" data-sr="post" data-sr-duration="1000" data-sr-distance="20">
+                {{ post_md(
+                    blog_1.image.md, blog_1.name,
+                    ["Doesn't fish. Herb. Him. Male his Image very divide make, heaven fourth lesser creepeth, divide creepeth. Let can't multiply signs."],
+                    blog_1.tags, blog_1.date, 'Read More', blog_1.rating, href="blog-post-gallery.html", data="data-sr-item=post"
+                ) }}
+
+                {{ post_md(
+                    blog_2.image.md, blog_2.name,
+                    ["Ille vivere. Ut ad te quaerebam ... purgare caeli. Sunt uh ... nonnullus propter errorem qui de rebus inter nos et iacere puto suus in causa."],
+                    blog_2.tags, blog_2.date, 'Read More', blog_2.rating, href="blog-post-carousel.html", data="data-sr-item=post"
+                ) }}
+
+                {{ post_md(
+                    blog_3.image.md, blog_3.name,
+                    ["Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Ego vivere, ut debui, et nunc fiant."],
+                    blog_3.tags, blog_3.date, 'Read More', blog_3.rating, href="blog-post-simple.html", data="data-sr-item=post"
+                ) }}
+
+                {{ post_md(
+                    blog_4.image, blog_4.name,
+                    ["Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui..."],
+                    blog_4.tags, blog_4.date, 'Read More', href="blog-post-gallery.html", data="data-sr-item=post"
+                ) }}
+
+                {{ post_md(
+                    blog_5.image, blog_5.name,
+                    ["Tu nunc coci ejus. Tu autem cocus Lab et probavimus liceat mihi sine causa est nunc coci interficere. Reputo it! Suus egregie. Ut antecedat."],
+                    blog_5.tags, blog_5.date, 'Read More', href="blog-post-carousel.html", data="data-sr-item=post"
+                ) }}
+
+                {{ post_md(
+                    blog_6.image.md, blog_6.name,
+                    ["Ludum mutavit. Verbum est ex. Et ... sunt occidat. Videtur quod est super omne oppidum. Quis transfretavit tu iratus es contudit cranium..."],
+                    blog_6.tags, blog_6.date, 'Read More', href="blog-post-simple.html", data="data-sr-item=post"
+                ) }}
+
+                {{ post_md(
+                    blog_7.image, blog_7.name,
+                    ["Ludum mutavit. Verbum est ex. Et ... sunt occidat. Videtur quod est super omne oppidum. Quis transfretavit tu iratus es contudit cranium..."],
+                    blog_7.tags, blog_7.date, 'Read More', href="blog-post-gallery.html", data="data-sr-item=post"
+                ) }}
+
+                <ul class="pagination mt-60 mb-0" data-sr="pagination" data-sr-interval="100" data-sr-duration="800" data-sr-distance="10">
+                    <li class="page-item active" data-sr-item="pagination">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item" data-sr-item="pagination">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item" data-sr-item="pagination">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item" data-sr-item="pagination">
+                        <a href="#" class="page-link">4</a>
+                    </li>
+                    <li class="page-item" data-sr-item="pagination">
+                        <a href="#" class="page-link next">Next</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-auto mpl-sidebar"{% if sr_widget %} {{ sr_widget }}{% endif %}>
+                {{ widget_search() }}
+                {{ widget_categories_badge('Categories', [['All', '40', '#'], ['Audio', '14', '#'], ['Photo', '13', '#'], ['Video', '5', '#'], ['Controllers', '8', '#']]) }}
+                {{ widget_posts('Popular News') }}
+                {{ widget_twitter('Our Twitter') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

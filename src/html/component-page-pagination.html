@@ -1,0 +1,20 @@
+{% set page_title = 'Component Page Pagination' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    {{ page_navigation({ title: 'Moved which', subtitle: 'Next', href: '#' }, { title: 'Them air above', subtitle: 'Previous', href: '#' }) }}
+</div>
+{% endblock %}

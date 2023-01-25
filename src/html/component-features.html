@@ -1,0 +1,39 @@
+{% set page_title = 'Component Features' %}
+
+{% set header_image = bg_1 %}
+{% set header_small = true %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">{{ page_title | replace('Component ', '') }}</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container mpl-box-md">
+    <div class="row vgap">
+        <div class="col-12 col-md-6 col-lg-4">
+            {{ feature(
+                icon(['M3 14H10V21H3V14Z', 'M3 3H10V10H3V3Z', 'M14 3H21V10H14V3Z', 'M14 14H21V21H14V14Z']),
+                'News', "MonsterPlay can be used for simple blogging, not only full-stack gaming template", 'h4'
+            ) }}
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            {{ feature(
+                icon(["M1 1H5L7.68 14.39M7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6L7.68 14.39ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM21 21C21 21.5523 20.5523 22 20 22C19.4477 22 19 21.5523 19 21C19 20.4477 19.4477 20 20 20C20.5523 20 21 20.4477 21 21Z"]),
+                'E-commerce', "If you want to sale goods, let's do it. This is so easy with MonsterPlay", 'h4'
+            ) }}
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            {{ feature(
+                icon(['M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z']),
+                'Social Network', "Build your gaming social network, or forum for Clan members", 'h4'
+            ) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

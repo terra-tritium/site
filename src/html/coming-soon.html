@@ -1,0 +1,50 @@
+{% set page_title = 'Coming Soon' %}
+{% set nav_small = true %}
+{% set header_image = 'assets/images/dark/bg-banner-1.jpg' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container text-center" data-sr="coming-soon" data-sr-interval="200" data-sr-duration="1200" data-sr-distance="20">
+        <h1 class="display-1 mb-60" data-sr-item="coming-soon">MonsterPlay</h1>
+        <div class="mpl-countdown mpl-countdown-transparent h4" data-end="2022-11-21 12:00" data-timezone="EST" data-sr-item="coming-soon"></div>
+        <a href="#" class="btn btn-md mt-60" data-sr-item="coming-soon">Pre-Order</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script>
+    $('.mpl-countdown').each(function () {
+        const $this = $(this);
+        const tz = $this.attr('data-timezone');
+        let end = $this.attr('data-end');
+        end = moment.tz(end, tz).toDate();
+
+        $this.countdown(end, function (event) {
+            $this.html(event.strftime([
+                '<div class="mpl-countdown-item">',
+                    '<span>Days</span>',
+                    '<span><span>%D</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Hours</span>',
+                    '<span><span>%H</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Minutes</span>',
+                    '<span><span>%M</span></span>',
+                '</div>',
+                '<div class="mpl-countdown-item">',
+                    '<span>Seconds</span>',
+                    '<span><span>%S</span></span>',
+                '</div>'
+            ].join('')));
+        });
+    });
+</script>
+{% endblock %}
+
+{% extends 'layouts/layout-1.html' %}
+

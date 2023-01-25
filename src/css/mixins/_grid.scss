@@ -1,0 +1,59 @@
+@use "sass:math";
+
+@mixin create-row($hgap: 0, $vgap: 0) {
+    display: flex;
+    flex-wrap: wrap;
+
+    // gaps
+    @if $vgap != 0 {
+        margin-bottom: #{math.div($vgap, -1)};
+    }
+    @if $hgap != 0 {
+        margin-right: #{math.div($hgap, -2)};
+        margin-left: #{math.div($hgap, -2)};
+    }
+
+    > div {
+        @if $vgap != 0 {
+            padding-bottom: $vgap;
+        }
+        @if $hgap != 0 {
+            padding-right: #{math.div($hgap, 2)};
+            padding-left: #{math.div($hgap, 2)};
+        }
+    }
+}
+
+@mixin create-gap($hgap: 0, $vgap: 0) {
+    @if $vgap != 0 {
+        margin-bottom: #{math.div($vgap, -1)};
+    }
+    @if $hgap != 0 {
+        margin-right: #{math.div($hgap, -2)};
+        margin-left: #{math.div($hgap, -2)};
+    }
+
+    > div {
+        @if $vgap != 0 {
+            padding-bottom: $vgap;
+        }
+        @if $hgap != 0 {
+            padding-right: #{math.div($hgap, 2)};
+            padding-left: #{math.div($hgap, 2)};
+        }
+    }
+}
+
+@mixin create-col($size: 0, $column: 0) {
+    @if $size == auto {
+        flex: 0 0 auto;
+        max-width: 100%;
+    } @else if $size == grow {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    } @else {
+        flex: 0 0 #{math.div($size, $column) * 100%};
+        max-width: #{math.div($size, $column) * 100%};
+    }
+}

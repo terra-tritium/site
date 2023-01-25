@@ -1,0 +1,132 @@
+{% set page_title = 'eSports Matches' %}
+{% set header_image = bg_3 %}
+{% set header_small = 'true' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">Matches</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <div class="row hgap-lg vgap-lg">
+            <div class="col-lg mpl-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">eSports Matches</li>
+                    </ol>
+                </nav>
+
+                <ul class="cyberpress-matchs-archive" data-sr="matches" data-sr-duration="1000">
+                    <li class="cyberpress-match" data-sr-item="matches">
+                        <div class="cyberpress-match-participants">
+                            <div class="cyberpress-match-participant">
+                                <div class="cyberpress-match-participant-thumbnail">
+                                    <a href="esports-single-team.html">{{ img('esports/queend_300x300.png') }}</a>
+                                </div>
+                                <h2 class="cyberpress-match-participant-title h4">
+                                    <a href="esports-single-team.html">
+                                        Queend
+                                        <img src="assets/images/flags/ch.svg" alt="ch" class="cyberpress-flag-img">
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="cyberpress-match-participant-vs">
+                                <a href="esports-single-match.html">
+                                    <span class="cyberpress-match-participant-time-start">January 15, 2021 4:00 pm</span>
+                                    <span class="cyberpress-match-points h3">VS</span>
+                                </a>
+                            </div>
+                            <div class="cyberpress-match-participant">
+                                <div class="cyberpress-match-participant-thumbnail">
+                                    <a href="esports-single-team.html">{{ img('esports/military-skull_300x300.png') }}</a>
+                                </div>
+                                <h2 class="cyberpress-match-participant-title h4">
+                                    <a href="esports-single-team.html">
+                                        Military Skull
+                                        <img src="assets/images/flags/br.svg" alt="br" class="cyberpress-flag-img">
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                        <ul class="cyberpress-match-info">
+                            <li>
+                                <a href="#" class="cyberpress-game-inline-link">
+                                    <img src="assets/images/esports/game-cs-go.svg" alt="">Counter-Strike: Global Offensive
+                                </a>
+                            </li>
+                            <li>
+                                <a href="esports-single-tournament.html" class="cyberpress-tournament-inline-link">
+                                    {{ icon(['M5 17H4C3.46957 17 2.96086 16.7893 2.58579 16.4142C2.21071 16.0391 2 15.5304 2 15V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H20C20.5304 3 21.0391 3.21071 21.4142 3.58579C21.7893 3.96086 22 4.46957 22 5V15C22 15.5304 21.7893 16.0391 21.4142 16.4142C21.0391 16.7893 20.5304 17 20 17H19M12 15L17 21H7L12 15Z']) }}Esports Championship Series Season 8
+                                </a>
+                            </li>
+                            <li>
+                                {{ icon(['M5 17H4C3.46957 17 2.96086 16.7893 2.58579 16.4142C2.21071 16.0391 2 15.5304 2 15V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H20C20.5304 3 21.0391 3.21071 21.4142 3.58579C21.7893 3.96086 22 4.46957 22 5V15C22 15.5304 21.7893 16.0391 21.4142 16.4142C21.0391 16.7893 20.5304 17 20 17H19M12 15L17 21H7L12 15Z']) }}Stage Semifinal
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cyberpress-match" data-sr-item="matches">
+                        <div class="cyberpress-match-participants">
+                            <div class="cyberpress-match-participant">
+                                <div class="cyberpress-match-participant-thumbnail">
+                                    <a href="esports-single-team.html">{{ img('esports/reaper_300x300.png') }}</a>
+                                </div>
+                                <h2 class="cyberpress-match-participant-title h4">
+                                    <a href="esports-single-team.html">
+                                        Reaper
+                                        <img src="assets/images/flags/us.svg" alt="ch" class="cyberpress-flag-img">
+                                    </a>
+                                </h2>
+                            </div>
+                            <div class="cyberpress-match-participant-vs">
+                                <a href="esports-single-match.html">
+                                    <span class="cyberpress-match-participant-time-start">January 6, 2021 3:00 pm</span>
+                                    <span class="cyberpress-match-points h3">11:10</span>
+                                </a>
+                            </div>
+                            <div class="cyberpress-match-participant">
+                                <div class="cyberpress-match-participant-thumbnail">
+                                    <a href="esports-single-team.html">{{ img('esports/military-skull_300x300.png') }}</a>
+                                </div>
+                                <h2 class="cyberpress-match-participant-title h4">
+                                    <a href="esports-single-team.html">
+                                        Military Skull
+                                        <img src="assets/images/flags/br.svg" alt="br" class="cyberpress-flag-img">
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                        <ul class="cyberpress-match-info">
+                            <li>
+                                <a href="#" class="cyberpress-game-inline-link">
+                                    <img src="assets/images/esports/game-dota-2.svg" alt="">Dota 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="esports-single-tournament.html" class="cyberpress-tournament-inline-link">
+                                    {{ icon(['M5 17H4C3.46957 17 2.96086 16.7893 2.58579 16.4142C2.21071 16.0391 2 15.5304 2 15V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H20C20.5304 3 21.0391 3.21071 21.4142 3.58579C21.7893 3.96086 22 4.46957 22 5V15C22 15.5304 21.7893 16.0391 21.4142 16.4142C21.0391 16.7893 20.5304 17 20 17H19M12 15L17 21H7L12 15Z']) }}2019 World Championship
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-auto-lg mpl-sidebar"{% if sr_widget %} {{ sr_widget }}{% endif %}>
+                {{ widget_search() }}
+                {{ widget_matches('Recent Matches') }}
+                {{ widget_match('Next Match') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

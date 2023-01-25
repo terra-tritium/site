@@ -1,0 +1,189 @@
+{% set page_title = 'eSports Players' %}
+{% set header_image = bg_3 %}
+{% set header_small = 'true' %}
+
+{% extends 'layouts/layout-1.html' %}
+
+{% block header %}
+<div class="mpl-banner-content mpl-box-lg">
+    <div class="container">
+        <h1 class="display-1 mb-0">Players</h1>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="mpl-box-md">
+    <div class="container">
+        <div class="row hgap-lg vgap-lg">
+            <div class="col-lg mpl-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">eSports Players</li>
+                    </ol>
+                </nav>
+
+                <div class="row vgap" data-sr="players" data-sr-interval="100" data-sr-duration="1000" data-sr-distance="20">
+                    <div class="col-12 col-sm-6 col-xl-4" data-sr-item="players">
+                        <div class="cyberpress-player">
+                            <div class="cyberpress-player-thumbnail">
+                                <a href="esports-single-player.html">{{ img('esports/player-garpy_566x664.jpg') }}</a>
+                            </div>
+                            <h2 class="cyberpress-player-title h5">
+                                <a href="esports-single-player.html">GaRpY</a>
+                            </h2>
+                            <ul class="cyberpress-player-info">
+                                <li>
+                                    {{ icon(['M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z']) }}Garett Marshall
+                                </li>
+                                <li>
+                                    {{ icon(['M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z', 'M9 9H9.01', 'M15 9H15.01']) }}Male
+                                </li>
+                                <li>
+                                    <img src="assets/images/flags/gb.svg" alt="ad" class="cyberpress-flag-img">United Kingdom
+                                </li>
+                                <li>
+                                    {{ icon(['M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M17 11L19 13L23 9M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z']) }}28 years old
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-4" data-sr-item="players">
+                        <div class="cyberpress-player">
+                            <div class="cyberpress-player-thumbnail">
+                                <a href="esports-single-player.html">{{ img('esports/player-bowman_566x664.jpg') }}</a>
+                            </div>
+                            <h2 class="cyberpress-player-title h4">
+                                <a href="esports-single-player.html">Bowman</a>
+                            </h2>
+                            <ul class="cyberpress-player-info">
+                                <li>
+                                    {{ icon(['M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z']) }}Viggo Hanson
+                                </li>
+                                <li>
+                                    {{ icon(['M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z', 'M9 9H9.01', 'M15 9H15.01']) }}Male
+                                </li>
+                                <li>
+                                    <img src="assets/images/flags/se.svg" alt="ad" class="cyberpress-flag-img">Sweden
+                                </li>
+                                <li>
+                                    {{ icon(['M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M17 11L19 13L23 9M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z']) }}27 years old
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-4" data-sr-item="players">
+                        <div class="cyberpress-player">
+                            <div class="cyberpress-player-thumbnail">
+                                <a href="esports-single-player.html">{{ img('esports/player-aluka_566x664.jpg') }}</a>
+                            </div>
+                            <h2 class="cyberpress-player-title h4">
+                                <a href="esports-single-player.html">Aluka</a>
+                            </h2>
+                            <ul class="cyberpress-player-info">
+                                <li>
+                                    {{ icon(['M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z']) }}Inessa Frock Strauss
+                                </li>
+                                <li>
+                                    {{ icon(['M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z', 'M9 9H9.01', 'M15 9H15.01']) }}Male
+                                </li>
+                                <li>
+                                    <img src="assets/images/flags/ch.svg" alt="ad" class="cyberpress-flag-img">Switzerland
+                                </li>
+                                <li>
+                                    {{ icon(['M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M17 11L19 13L23 9M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z']) }}25 years old
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-4" data-sr-item="players">
+                        <div class="cyberpress-player">
+                            <div class="cyberpress-player-thumbnail">
+                                <a href="esports-single-player.html">{{ img('esports/player-faker_566x664.jpg') }}</a>
+                            </div>
+                            <h2 class="cyberpress-player-title h4">
+                                <a href="esports-single-player.html">Faker</a>
+                            </h2>
+                            <ul class="cyberpress-player-info">
+                                <li>
+                                    {{ icon(['M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z']) }}Lee San Hyuk
+                                </li>
+                                <li>
+                                    {{ icon(['M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z', 'M9 9H9.01', 'M15 9H15.01']) }}Male
+                                </li>
+                                <li>
+                                    <img src="assets/images/flags/af.svg" alt="ad" class="cyberpress-flag-img">Afghanistan
+                                </li>
+                                <li>
+                                    {{ icon(['M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M17 11L19 13L23 9M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z']) }}32 years old
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-4" data-sr-item="players">
+                        <div class="cyberpress-player">
+                            <div class="cyberpress-player-thumbnail">
+                                <a href="esports-single-player.html">{{ img('esports/player-krimz_566x664.jpg') }}</a>
+                            </div>
+                            <h2 class="cyberpress-player-title h4">
+                                <a href="esports-single-player.html">KRiMZ</a>
+                            </h2>
+                            <ul class="cyberpress-player-info">
+                                <li>
+                                    {{ icon(['M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z']) }}Freddy Johansson
+                                </li>
+                                <li>
+                                    {{ icon(['M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z', 'M9 9H9.01', 'M15 9H15.01']) }}Male
+                                </li>
+                                <li>
+                                    <img src="assets/images/flags/se.svg" alt="ad" class="cyberpress-flag-img">Sweden
+                                </li>
+                                <li>
+                                    {{ icon(['M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M17 11L19 13L23 9M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z']) }}28 years old
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-4" data-sr-item="players">
+                        <div class="cyberpress-player">
+                            <div class="cyberpress-player-thumbnail">
+                                <a href="esports-single-player.html">{{ img('esports/player-kuroky_566x664.jpg') }}</a>
+                            </div>
+                            <h2 class="cyberpress-player-title h4">
+                                <a href="esports-single-player.html">KuroKy</a>
+                            </h2>
+                            <ul class="cyberpress-player-info">
+                                <li>
+                                    {{ icon(['M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z']) }}Kuro Salehi Tahasomi
+                                </li>
+                                <li>
+                                    {{ icon(['M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z', 'M9 9H9.01', 'M15 9H15.01']) }}Male
+                                </li>
+                                <li>
+                                    <img src="assets/images/flags/de.svg" alt="ad" class="cyberpress-flag-img">Germany
+                                </li>
+                                <li>
+                                    {{ icon(['M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M17 11L19 13L23 9M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z']) }}31 years old
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-auto-lg mpl-sidebar"{% if sr_widget %} {{ sr_widget }}{% endif %}>
+                {{ widget_search() }}
+                {{ widget_matches('Recent Matches') }}
+                {{ widget_match('Next Match') }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
