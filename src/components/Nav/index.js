@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from '../../assets/logo-studio.svg'
 import './style.css'
 
 function Nav() {
@@ -11,7 +12,7 @@ function Nav() {
         <a href="#" className="mpl-navbar-toggle"></a>
         <div className="mpl-navbar-brand">
           <a href="index.html">
-            <img src="assets/images/logo-studio.svg" alt="" />
+            <img src={Logo} />
           </a>
         </div>
         <div className="mpl-navbar-content">
