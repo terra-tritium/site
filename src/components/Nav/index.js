@@ -29,7 +29,7 @@ function Nav() {
             </li>
             <li>
               <a href="studio-index.html#our-works" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> Suport </span>
+                <span className="mpl-nav-link-name"> Support </span>
               </a>
             </li>
             <li>
