@@ -14,6 +14,11 @@ import './style.css'
 function Footer() {
   return (
     <>
+    <div className="mpl-box-md">
+      <div className="container">
+        <h2 className="display-2 mb-60 text-center">
+          Community
+        </h2>
     <footer className="mpl-footer mpl-footer-parallax mpl-footer-social">
       <div className="mpl-image" data-speed="0.9" data-img-position="50% 0%">
         <img src={FooterImg} alt="" className="jarallax-img" />
@@ -91,6 +96,8 @@ function Footer() {
         </div>
       </div>
     </footer>
+    </div>
+    </div>
     </>
   );
 }

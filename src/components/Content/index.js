@@ -38,6 +38,7 @@ function Content() {
     }, 1000);
     return () => clearTimeout(timer);
   }, [days, hours, minutes, seconds]);
+
   return (
     <div className="content-wrap">
       <div>
@@ -63,33 +64,30 @@ function Content() {
                     strategy game. Lead your civilization thru galaxies, mining
                     and earning real crypto assets.
                   </p>
-                  <a href="#our-works" class="btn btn-md" data-sr-item="banner">
-                    Play Now
-                  </a>
+                  <div className="countdown-container">
+                    <div className="countdown-box">
+                      <div className="countdown-number">{days}</div>
+                      <div className="countdown-label">Days</div>
+                    </div>
+                    <div className="countdown-box">
+                      <div className="countdown-number">{hours}</div>
+                      <div className="countdown-label">Hours</div>
+                    </div>
+                    <div className="countdown-box">
+                      <div className="countdown-number">{minutes}</div>
+                      <div className="countdown-label">Minutes</div>
+                    </div>
+                    <div className="countdown-box">
+                      <div className="countdown-number">{seconds}</div>
+                      <div className="countdown-label">Seconds</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <div className="countdown-container">
-      <div className="countdown-box">
-        <div className="countdown-number">{days}</div>
-        <div className="countdown-label">Days</div>
-      </div>
-      <div className="countdown-box">
-        <div className="countdown-number">{hours}</div>
-        <div className="countdown-label">Hours</div>
-      </div>
-      <div className="countdown-box">
-        <div className="countdown-number">{minutes}</div>
-        <div className="countdown-label">Minutes</div>
-      </div>
-      <div className="countdown-box">
-        <div className="countdown-number">{seconds}</div>
-        <div className="countdown-label">Seconds</div>
-      </div>
-    </div>
-    
+
         <div className="mpl-box-md bg-light" id="our-works">
           <div
             className="container text-center"
@@ -98,7 +96,7 @@ function Content() {
             data-sr-distance="20"
           >
             <h2 className="display-2 mb-60" data-sr-item="works">
-              Gallery
+              Preview
             </h2>
             <div
               className="row vgap"
@@ -238,7 +236,6 @@ function Content() {
         </div>
       </div>
     </div>
-  
   );
 }
 

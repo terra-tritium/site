@@ -23,14 +23,15 @@ function Nav() {
               </a>
             </li>
             <li>
-              <a href="studio-index.html#our-works" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> Community </span>
+            <a href="studio-index.html#our-works" className="mpl-nav-link">
+                <span className="mpl-nav-link-name"> Preview </span>
               </a>
+            
             </li>
             <li>
-              <a href="studio-index.html#our-works" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> Support </span>
-              </a>
+            <a href="studio-index.html#our-works" className="mpl-nav-link">
+                <span className="mpl-nav-link-name"> Roadmap </span>
+            </a>
             </li>
             <li>
               <a href="studio-index.html#our-works" className="mpl-nav-link">
@@ -40,13 +41,15 @@ function Nav() {
             
             <li>
               <a href="studio-index.html#our-works" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> Preview </span>
+                <span className="mpl-nav-link-name"> Support </span>
               </a>
+              
             </li>
+            
             <li>
               <a href="studio-index.html#our-works" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> Roadmap </span>
-              </a>
+                <span className="mpl-nav-link-name"> Community </span>
+              </a>              
             </li>
           </ul>
           </div>
