@@ -31,7 +31,9 @@ function Preloader() {
           </div>
         </div>
       </div>
-      <div className="mpl-preloader-bg"></div>
+      <div className="mpl-preloader-bg">
+        
+      </div>
     </>
   );
 }

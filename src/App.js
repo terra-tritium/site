@@ -1,14 +1,14 @@
-import React from 'react'
-import Home from './pages/Home'
-import News from './pages/News'
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import News from "./pages/News";
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
+    <>
+      <Home />
       <News/>
-    </div>
+    </>  
   );
 }
 

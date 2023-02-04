@@ -2,7 +2,7 @@ import React from "react";
 
 function Support() {
   return (
-    <div className="mpl-box-md">
+    <div className="mpl-box-md bg-light" id="support">
       <div className="container">
         <h2 className="display-2 mb-60 text-center" data-sr data-sr-duration="1200" data-sr-distance="20">
           Support

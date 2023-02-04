@@ -14,7 +14,7 @@ import './style.css'
 function Footer() {
   return (
     <>
-    <div className="mpl-box-md">
+    <div className="mpl-box-md bg-light" id="community">
       <div className="container">
         <h2 className="display-2 mb-60 text-center">
           Community
@@ -44,7 +44,7 @@ function Footer() {
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
-                <a href="#" className="mpl-social">
+                <a href="https://www.youtube.com" className="mpl-social">
                   <span className="mpl-social-icon">
                   <img src={Youtube} className="mpl-image-icon" alt=""/>
                   </span>
@@ -68,7 +68,7 @@ function Footer() {
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
-                <a href="#" className="mpl-social">
+                <a href="https://www.instagram.com" className="mpl-social">
                   <span className="mpl-social-icon">
                   <img src={Instagram} className="mpl-image-icon" alt=""/>
                   </span>

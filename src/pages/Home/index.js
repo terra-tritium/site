@@ -1,10 +1,12 @@
 import React from "react"
 import Preloader from '../../components/Preloader'
 import Nav from '../../components/Nav'
-import Content from '../../components/Content'
+import Banner from '../../components/Banner'
+import Preview from '../../components/Preview'
 import Footer from '../../components/Footer'
 import Support from '../../components/Support'
 import Roadmap from '../../components/Roadmap'
+import Team from '../../components/Team'
 import './styles.css'
 
 
@@ -16,8 +18,10 @@ function Home()  {
       <>
          <Preloader/>
          <Nav/>
-         <Content/>
+         <Banner/>
+         <Preview/>
          <Roadmap/>
+         <Team/>
          <Support/>
          <Footer/>
 
