@@ -35,7 +35,7 @@ function Team() {
                           
                         </span>
                         <span className="mpl-social-name h5">
-                          André Amorim
+                          André 
                         </span>
                         <span className="mpl-social-name h6">
                           Tech Lead
@@ -92,7 +92,7 @@ function Team() {
                           
                         </span>
                         <span className="mpl-social-name h5">
-                          Fábio Rocha
+                          Fábio 
                         </span>
                         <span className="mpl-social-name h6">
                           Developer

@@ -2812,7 +2812,7 @@ select.form-select > option {
     border-radius: 3px;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, background-size 0.2s ease-in-out, border-color 0.2s ease-in-out;
     z-index: 0;
-    background-color: #0eb708;
+    background-color: orange;
 }
 .btn::after, .btn.dropdown-toggle::after {
     content: ".";
@@ -2838,7 +2838,7 @@ select.form-select > option {
     margin-left: 10px;
 }
 .btn:hover, .btn:focus, .btn:not(:disabled):not(.disabled):active {
-    background-color: #0eb708;
+    background-color: orange;
     background-size: 100%, 100%;
 }
 .btn:hover, .btn:focus {

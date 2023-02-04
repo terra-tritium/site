@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "../../assets/logo-studio.svg";
 import "./style.css";
 
 function Nav() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
+  
   return (
     <nav className="mpl-navbar-top mpl-navbar">
       <div className="mpl-navbar-mobile-overlay"></div>
