@@ -26,11 +26,7 @@ function Nav() {
                 <span className="mpl-nav-link-name"> Roadmap </span>
               </a>
             </li>
-            <li>
-              <a href="#team" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> Team </span>
-              </a>
-            </li>
+            
 
             <li>
               <a href="#support" className="mpl-nav-link">
@@ -43,11 +39,7 @@ function Nav() {
                 <span className="mpl-nav-link-name"> Community </span>
               </a>
             </li>
-            <li>
-              <a href="#news" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> News </span>
-              </a>
-            </li>
+            
           </ul>
         </div>
       </div>

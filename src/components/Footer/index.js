@@ -32,7 +32,7 @@ function Footer() {
                   <span className="mpl-social-icon">
                   <img src={Discord} className="mpl-image-icon" alt=""/>
                   </span>
-                  <span className="mpl-social-name h5">Subscribe to Discord</span>
+                  
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
@@ -40,7 +40,7 @@ function Footer() {
                   <span className="mpl-social-icon">
                   <img src={Telegram} className="mpl-image-icon" alt=""/>
                   </span>
-                  <span className="mpl-social-name h5">Join a Channel in Telegram</span>
+                  
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
@@ -48,7 +48,7 @@ function Footer() {
                   <span className="mpl-social-icon">
                   <img src={Youtube} className="mpl-image-icon" alt=""/>
                   </span>
-                  <span className="mpl-social-name h5">Watch on Youtube</span>
+                  
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
@@ -56,7 +56,7 @@ function Footer() {
                   <span className="mpl-social-icon">
                   <img src={Twitch} className="mpl-image-icon" alt=""/>
                   </span>
-                  <span className="mpl-social-name h5">Watch on Twitch</span>
+                  
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
@@ -64,7 +64,7 @@ function Footer() {
                   <span className="mpl-social-icon">
                   <img src={Facebook} className="mpl-image-icon" alt=""/>
                   </span>
-                  <span className="mpl-social-name h5">Follow on Facebook</span>
+                  
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
@@ -72,7 +72,7 @@ function Footer() {
                   <span className="mpl-social-icon">
                   <img src={Instagram} className="mpl-image-icon" alt=""/>
                   </span>
-                  <span className="mpl-social-name h5">Follow on Instagram</span>
+                  
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
@@ -80,7 +80,7 @@ function Footer() {
                   <span className="mpl-social-icon">
                   <img src={Twitter} className="mpl-image-icon" alt=""/>
                   </span>
-                  <span className="mpl-social-name h5">Follow on Twitter</span>
+                  
                 </a>
               </div>
               <div className="col-6 col-sm-3" data-sr-item="footer">
@@ -88,7 +88,7 @@ function Footer() {
                   <span className="mpl-social-icon">
                   <img src={Gmail} className="mpl-image-icon" alt=""/>
                   </span>
-                  <span className="mpl-social-name h5">Contact us</span>
+                  
                 </a>
               </div>
             </div>

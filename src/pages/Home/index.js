@@ -22,8 +22,7 @@ function Home()  {
          <NavMob/>
          <Banner/>
          <Preview/>
-         <Roadmap/>
-         <Team/>
+         <Roadmap/>         
          <Support/>
          <Footer/>
 
