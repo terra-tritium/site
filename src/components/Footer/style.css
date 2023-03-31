@@ -21,9 +21,16 @@
 
 @media (max-width: 575px) {
     .mpl-footer {
-        right: 20px;
+        right: 10px;
         width: 480px;
     }
+}
+
+@media (max-width: 400px) {
+  .mpl-footer {
+      right: 10px;
+      width: 280px;
+  }
 }
 
 .mpl-social {
