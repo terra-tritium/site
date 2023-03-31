@@ -1,7 +1,6 @@
 import React from "react"
 import Preloader from '../../components/Preloader'
 import Nav from '../../components/Nav'
-import NavMob from '../../components/NavMob'
 import Banner from '../../components/Banner'
 import Preview from '../../components/Preview'
 import Footer from '../../components/Footer'
@@ -18,10 +17,8 @@ function Home()  {
     return (
       <>
          <Preloader/>
-         <Nav/>
-         <NavMob/>
-         <Banner/>
-         <Preview/>
+         <Nav/>         
+         <Banner/>         
          <Roadmap/>         
          <Support/>
          <Footer/>

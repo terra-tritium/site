@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/logo-studio.svg";
+import Logo from "../../assets/logo.png";
 import "./style.css";
 
 function Nav() {
@@ -16,11 +16,12 @@ function Nav() {
         </div>
         <div className="mpl-navbar-content">
           <ul className="mpl-navbar-nav">
-            <li>
-              <a href="#preview" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> Preview </span>
+          <li>
+              <a href="#" className="mpl-nav-link">
+                <span className="mpl-nav-link-name"> Home </span>
               </a>
             </li>
+           
             <li>
               <a href="#roadmap" className="mpl-nav-link">
                 <span className="mpl-nav-link-name"> Roadmap </span>

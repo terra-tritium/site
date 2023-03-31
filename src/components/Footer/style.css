@@ -1,67 +1,45 @@
 .mpl-footer {
     position: relative;
-    padding: 120px 0;
-    overflow: hidden;
-    background-color: #222522;
-    
-}
-.mpl-footer > .mpl-image {
-    opacity: 0.3;
-}
-.mpl-footer > .mpl-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(180deg, rgba(31, 33, 31, 0.6) 0%, rgba(31, 33, 31, 0) 100%);
-}
-.mpl-footer > .mpl-image img {
-    opacity: 0.4;
-}
-.mpl-footer .mpl-footer-content {
-    width: 580px;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.mpl-footer .mpl-footer-wrapper {
-    position: relative;
-    z-index: 1;
+    right: 320px;
+    width: 1920px;
+    height: 100vh;
 }
 
-.mpl-footer-social {
-    text-align: center;
+@media (max-width: 991px) {
+    .mpl-footer {
+        right: 160px;
+        width: 960px;
+    }
 }
 
-.mpl-footer-copyright {
-    padding: 48px 0;
-    color: #fff;
-    text-align: center;
-    background-color: #222522;
-}
-.mpl-footer-copyright p:last-child {
-    margin-bottom: 0;
+@media (max-width: 767px) {
+    .mpl-footer {
+        right: 90px;
+        width: 680px;
+    }
 }
 
-.jarallax-img {
-    width: 100%;
-    max-width: 100%;
-  }
-/*------------------------------------------------------------------
-  social
--------------------------------------------------------------------*/
+@media (max-width: 575px) {
+    .mpl-footer {
+        right: 20px;
+        width: 480px;
+    }
+}
+
 .mpl-social {
     display: block;
     color: #fff;
     text-align: center;
-    
+
 }
-.mpl-social:hover, .mpl-social:focus {
+
+.mpl-social:hover,
+.mpl-social:focus {
     color: #fff;
 }
-.mpl-social:hover .mpl-social-icon, .mpl-social:focus .mpl-social-icon {
+
+.mpl-social:hover .mpl-social-icon,
+.mpl-social:focus .mpl-social-icon {
     background-color: #161816;
 }
 
@@ -72,43 +50,126 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:10px;
-    padding:30px;
+    margin: 10px;
+    padding: 30px;
     width: 100px;
-    height:100px;
-    top:180px;
+    height: 100px;
+    top: 180px;
     font-size: 34px;
     background-color: rgba(22, 24, 22, 0.9);
     border-radius: 5px;
-    
+
 }
 
-@media (max-width: 768px) {
+
+.mpl-social-name {
+    position: relative;
+    display: block;
+    top: 190px;
+    margin-bottom: 0;
+    line-height: 1.3333333333;
+}
+
+.mpl-social-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+    top: 180px;
+    font-size: 34px;
+    background-color: rgba(22, 24, 22, 0.9);
+    border-radius: 5px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .mpl-social-name {
+      top: 100px;
+      left:-150px;
+    }
+    
+    .mpl-social-icon {
+      top: 100px;
+      left:-150px;
+      width: 80px;
+      height: 80px;
+      padding: 20px;
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .mpl-social-name {
+      top: 50px;
+      left:-20px;
+    }
+    
+    .mpl-social-icon {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+      padding: 15px;
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mpl-social-name {
+      top: 50px;
+      left:-10px;
+    }
   
     .mpl-social-icon {
-        top: -30px;
-        right:350px;
-        width:100px;
-        margin:10px;
-        
-      }
+      top: 50px;
+      left: -5px;
+      font-size: 24px;
+      width: 80px;
+      height: 80px;
+      padding: 20px;
+    }
   }
- 
   
+  @media screen and (max-width: 575px) {
+    .mpl-social-name {
+      top: -50px;
+    }
+  
+    .mpl-social-icon {
+      top: -50px;
+      left: 50px;
+      font-size: 24px;
+      width: 80px;
+      height: 80px;
+      padding: 20px;
+    }
+  }
+  
+
+
+
+
+
 .mpl-social-icon .icon {
     position: absolute;
     width: 34px;
     height: 34px;
 }
+
 .mpl-social-icon::after {
     content: "";
     display: block;
     padding-top: 80%;
 }
 
-.mpl-image-icon{
-    width:34px;
-    height:34px;
+.mpl-image-icon {
+    width: 34px;
+    height: 34px;
 }
 
 .icon-container {
@@ -119,22 +180,9 @@
     height: 100vh;
 }
 
-.icon {      
+.icon {
     width: 100px;
     height: 100px;
     margin: 20px;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
