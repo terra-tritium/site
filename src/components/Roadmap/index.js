@@ -1,6 +1,6 @@
 import React from "react";
 import RoadmapImg from '../../assets/roadmap.jpg'
-import StarBackground from '../StarBackground'
+
 
 
 
