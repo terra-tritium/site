@@ -53,6 +53,28 @@ small,
 
 }
 
+@media (max-width: 375px) {
+    .lead {        
+      z-index: 10;
+      position: fixed;
+      top: 300px;
+      left: 50px;
+      font-size: 20px;
+      width: 280px;
+    }
+  }
+
+@media (max-width: 360px) {
+    .lead {        
+      z-index: 10;
+      position: fixed;
+      top: 300px;
+      left: 10px;
+      font-size: 20px;
+      width: 280px;
+    }
+  }
+
 .mpl-link {
     display: inline-block;
     padding: 0;
@@ -200,12 +222,51 @@ h6>.badge,
     border-radius: 15px;
 
 }
-
-@media (max-width: 400px) {
+@media (max-width: 360px) {
     .mpl-image-rodmap {
         position: relative;
-        left: -5px;
-        width: 360px;
+        left: -10px;
+        width: 200px;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .mpl-image-rodmap {
+        position: relative;
+        left: -10px;
+        width: 350px;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 393px) {
+    .mpl-image-rodmap {
+        position: relative;
+        left: -15px;
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 414px) {
+    .mpl-image-rodmap {
+        position: relative;
+        left: -10px;
+        width: 380px;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 390px) {
+    .mpl-image-rodmap {
+        position: relative;
+        left: -13px;
+        width: 370px;
         height: auto;
         border-radius: 15px;
     }
@@ -249,12 +310,24 @@ h6>.badge,
 }
 
 .logo-img {
-    width: 500px;
+    position:relative;
+    width: 400px;
+    
 }
 
 @media only screen and (max-width: 700px) {
     .logo-img {
         width: 300px;
+        
+    }
+}
+
+@media  (max-width: 375px) {
+    .logo-img {
+        position: relative;
+        margin-top:-100px;
+        margin-left:-20px;
+        width: 200px;        
         
     }
 }
