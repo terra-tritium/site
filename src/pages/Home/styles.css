@@ -3,13 +3,14 @@
     src: url('/src/assets/Fonts/Flama-Basic.otf');
     font-weight: normal;
     font-style: normal;
-  }
-  
-body{
+}
+
+body {
     overflow-x: hidden;
-    
+
 
 }
+
 a {
     color: #fff;
     text-decoration: none;
@@ -189,72 +190,76 @@ h6>.badge,
 /*------------------------------------------------------------------
   Base
 -------------------------------------------------------------------*/
-.mpl-image {
-    display: grid;
-    background-color: #161816;
-
-
-}
 
 .mpl-image-rodmap {
     position: relative;
-    right: 80px;
+    right: 60px;
     background-color: black;
-    max-width: 1500px;
+    max-width: 500px;
     height: 800px;
     border-radius: 15px;
 
 }
-.mpl-image-rodmap {
-    position: relative;
-    right: 80px;
-    background-color: black;
-    max-width: 1500px;
-    height: 800px;
-    border-radius: 15px;
-  }
-  
-  @media (max-width: 767px) { 
-    .mpl-image-rodmap {
-      position:relative;  
-      right: 25px;
-      max-width: 500px;      
-      height: auto;
-      border-radius: 0;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .mpl-image-rodmap {
-      right: 40px;
-      max-width: 230%;
-      height: auto;
-      border-radius: 15px;
-    }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1199px) { 
-    .mpl-image-rodmap {
-      right: 40px;
-      max-width: 340%;
-      height: auto;
-      border-radius: 15px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .mpl-image-rodmap {
-      right: 80px;
-      max-width: 1500px;
-      height: 800px;
-      border-radius: 15px;
-    }
-  }
 
-  .logo-img{
-    width:500px;
-  }
-  
+@media (max-width: 400px) {
+    .mpl-image-rodmap {
+        position: relative;
+        left: -10px;
+        width: 360px;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mpl-image-rodmap {
+        position: relative;
+        right: 25px;
+        max-width: 500px;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mpl-image-rodmap {
+        right: 40px;
+        max-width: 230%;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mpl-image-rodmap {
+        right: 40px;
+        max-width: 340%;
+        height: auto;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mpl-image-rodmap {
+        right: 80px;
+        max-width: 1500px;
+        height: 800px;
+        border-radius: 15px;
+    }
+}
+
+.logo-img {
+    width: 500px;
+}
+
+@media only screen and (max-width: 700px) {
+    .logo-img {
+        width: 300px;
+        /* Ou qualquer outro valor que você achar adequado */
+    }
+}
+
+
 
 
 /*------------------------------------------------------------------
@@ -276,11 +281,11 @@ h6>.badge,
 .bg-light1 {
     background: linear-gradient(to bottom, #db7901, #0f0f0f, #000000);
     position: relative;
-  }
+}
 
-.bg-light{
+.bg-light {
     background-color: #1b1d1b !important;
-}  
+}
 
 .bg-primary {
     background-color: #2b6ad9 !important;
@@ -322,11 +327,18 @@ h6>.badge,
 
 }
 
-@media screen and (min-width: 0\0) {
+@media (max-width: 400px) {
     .mpl-banner {
-        height: 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        left: 0px;
+        width: 400px;
+        min-height: 100vh;
+        overflow: hidden;
     }
 }
+
 
 .mpl-banner.mpl-banner-top {
     padding-top: 100px;
@@ -364,15 +376,15 @@ h6>.badge,
 }
 
 
-.jarallax-img{
-    opacity:0.4;
+.jarallax-img {
+    opacity: 0.4;
 }
 
-.logo-img{
-    position:relative;
+.logo-img {
+    position: relative;
     filter: brightness(0) invert(1);
-    left:-10px;
-    top:-50px;
+    left: -10px;
+    top: -50px;
 }
 
 .mpl-banner>.mpl-image,
@@ -4983,8 +4995,8 @@ a.mpl-post-item:not(.mpl-post-overlay):hover .mpl-post-title {
     padding-bottom: 60px;
 }
 
-.jarallax-img{
-    opacity:0.5;
+.jarallax-img {
+    opacity: 0.5;
 }
 
 /*------------------------------------------------------------------
@@ -9283,12 +9295,3 @@ body.modal-open .content-wrap {
 .mpl-carousel-vertical-center .swiper-wrapper {
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
