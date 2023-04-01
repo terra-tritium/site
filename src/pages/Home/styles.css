@@ -250,6 +250,10 @@ h6>.badge,
       border-radius: 15px;
     }
   }
+
+  .logo-img{
+    width:600px;
+  }
   
 
 
@@ -269,9 +273,14 @@ h6>.badge,
     background-color: #db7901 !important;
 }
 
-.bg-light {
+.bg-light1 {
+    background: linear-gradient(to bottom, #db7901, #0f0f0f, #000000);
+    position: relative;
+  }
+
+.bg-light{
     background-color: #1b1d1b !important;
-}
+}  
 
 .bg-primary {
     background-color: #2b6ad9 !important;
