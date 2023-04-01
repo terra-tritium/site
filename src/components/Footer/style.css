@@ -30,6 +30,7 @@
   .mpl-footer {
       right: 20px;
       width: 380px;
+      overflow-x: hidden;
   }
 }
 
