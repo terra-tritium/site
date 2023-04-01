@@ -46,7 +46,7 @@ small,
 
 .lead {
     margin-bottom: 1.25rem;
-    font-size: 25px;
+    font-size: 23px;
     color: white;
     font-family: 'FlamaBasic';
 
@@ -252,7 +252,7 @@ h6>.badge,
   }
 
   .logo-img{
-    width:600px;
+    width:500px;
   }
   
 
