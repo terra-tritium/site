@@ -31,7 +31,7 @@ function Nav() {
 
             <li>
               <a href="#support" className="mpl-nav-link">
-                <span className="mpl-nav-link-name"> Support </span>
+                <span className="mpl-nav-link-name"> Contact Us </span>
               </a>
             </li>
 

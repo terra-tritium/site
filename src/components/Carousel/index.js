@@ -10,6 +10,13 @@ function Carousel() {
 
     return (
         <div className="mpl-box-sm bg-light1">
+            <div className="sponsors">
+                <h2 className="display-2 mb-60 text-center" data-sr data-sr-duration="1200" data-sr-distance="20">
+                Partners & Sponsors
+                </h2>
+            </div>
+
+
             <div className="container">
                 <div className="mpl-carousel mpl-carousel-vertical-center text-center"
                     data-gap="30"
@@ -21,8 +28,8 @@ function Carousel() {
                     <img src={Logo2} className="logo2" alt="" />
                     <img src={Logo3} className="logo3" alt="" />
                     <img src={Logo4} className="logo4" alt="" />
-                    <img src={Logo5} className="logo5"alt="" />
-                    
+                    <img src={Logo5} className="logo5" alt="" />
+
                 </div>
             </div>
         </div>

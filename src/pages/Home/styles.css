@@ -121,13 +121,17 @@ h6,
 .display-3 {
     margin-top: 0;
     margin-bottom: 2rem;
-    font-family: futura-pt, sans-serif;
-    font-weight: 700;
+    font-size: 20px;
+    font-family: 'FlamaBasic';
+    font-weight: 100;
     line-height: 1.2;
     color: #fff;
     letter-spacing: 0.01em;
 
 }
+
+
+
 
 h1>.badge,
 h2>.badge,
@@ -2637,9 +2641,11 @@ h6>.badge,
 -------------------------------------------------------------------*/
 .form-control,
 .form-select {
+    position:relative;
+    top:-100px;
     height: auto;
     padding: 0.75rem 1.25rem;
-    font-family: proxima-nova, sans-serif;
+    font-family: 'FlamaBasic';
     font-size: 1rem;
     font-weight: 400;
     color: #efe3d9;
@@ -2825,6 +2831,7 @@ select.form-select>option {
 -------------------------------------------------------------------*/
 .btn {
     position: relative;
+    top:-100px;
     display: inline-flex;
     align-items: stretch;
     padding: 10px 25px;
