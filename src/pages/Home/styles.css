@@ -226,7 +226,7 @@ h6>.badge,
     .mpl-image-rodmap {
         position: relative;
         left: -10px;
-        width: 200px;
+        width: 50%;
         height: auto;
         border-radius: 15px;
     }
@@ -235,7 +235,7 @@ h6>.badge,
 @media (max-width: 375px) {
     .mpl-image-rodmap {
         position: relative;
-        left: -10px;
+        left: -15px;
         width: 350px;
         height: auto;
         border-radius: 15px;
@@ -265,7 +265,7 @@ h6>.badge,
 @media (max-width: 390px) {
     .mpl-image-rodmap {
         position: relative;
-        left: -13px;
+        left: -18px;
         width: 370px;
         height: auto;
         border-radius: 15px;
