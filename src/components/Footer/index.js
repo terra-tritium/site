@@ -95,9 +95,9 @@ function Footer() {
             </div>
           </footer>
           <div class="mpl-footer-copyright">
-            
+            <div class="container">
               <p>COPYRIGHT © 2023 TERRA TRITIUM - ALL RIGHT RESERVED</p>
-            
+            </div>
           </div>
         </div>
       </div>
