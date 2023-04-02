@@ -8,6 +8,7 @@ import Support from '../../components/Support'
 import Roadmap from '../../components/Roadmap'
 import Team from '../../components/Team'
 import './styles.css'
+import Carousel from '../../components/Carousel'
 
 
 function Home()  {
@@ -21,6 +22,7 @@ function Home()  {
          <Banner/>         
          <Roadmap/>         
          <Support/>
+         <Carousel/>
          <Footer/>
 
       </>

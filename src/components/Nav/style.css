@@ -390,8 +390,8 @@
 .mpl-navbar-brand img {
     position:relative;
     filter: brightness(0) invert(1);
-    width:80px;
-    left:-10px;
+    width:60px;
+    left:0px;
   }
 
 
