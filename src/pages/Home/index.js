@@ -1,6 +1,7 @@
 import React from "react"
 import Preloader from '../../components/Preloader'
 import Nav from '../../components/Nav'
+import NavBarMobile from '../../components/NavBarMobile'
 import Banner from '../../components/Banner'
 import Preview from '../../components/Preview'
 import Footer from '../../components/Footer'
@@ -18,7 +19,8 @@ function Home()  {
     return (
       <>
          <Preloader/>
-         <Nav/>         
+         <Nav/>   
+         <NavBarMobile/>      
          <Banner/>         
          <Roadmap/>         
          <Support/>

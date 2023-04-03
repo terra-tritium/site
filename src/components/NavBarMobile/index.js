@@ -1,22 +1,23 @@
-import React from "react";
-import Logo from "../../assets/logo.png";
-import "./style.css";
+import React, { useState } from 'react';
+import './style.css';
 
-function Nav() {
-  
+const NavBarMobile = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="mpl-navbar-top mpl-navbar">
-      <div className="mpl-navbar-mobile-overlay"></div>
-      <div className="container mpl-navbar-container">
-        
-        <div className="mpl-navbar-brand">
-          <a href="/">
-            <img src={Logo} />
-          </a>
-        </div>
-        <div className="mpl-navbar-content">
-          <ul className="mpl-navbar-nav">
-          <li>
+    <>
+      <button className="hamburger" onClick={handleMenuToggle}>
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+      </button>
+      <div className={`menu ${isOpen ? 'open' : ''}`}>
+        <ul>
+        <li>
               <a href="#" className="mpl-nav-link">
                 <span className="mpl-nav-link-name"> Home </span>
               </a>
@@ -41,11 +42,10 @@ function Nav() {
               </a>
             </li>
             
-          </ul>
-        </div>
+        </ul>
       </div>
-    </nav>
+    </>
   );
-}
+};
 
-export default Nav;
+export default NavBarMobile;

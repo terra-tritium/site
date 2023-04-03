@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'FlamaBasic';
+  src: url('/src/assets/Fonts/Flama-Basic.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.hamburger {
+    position: fixed;
+    top: 35px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1900;
+  }
+  
+  .hamburger-line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hamburger-line:first-child {
+    transform-origin: top;
+  }
+  
+  .hamburger-line:last-child {
+    transform-origin: bottom;
+  }
+ 
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 500px;
+    background-color: #191b19;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 190;
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .menu.open {
+    right: 0;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    position:relative;
+    margin: 10px;
+    padding: 0;
+    top:80px;
+    font-family: 'FlamaBasic';
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  } 
+  
+ 
+  .hamburger-line {
+    display: block;
+  }
+  
+  .hamburger-line:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
