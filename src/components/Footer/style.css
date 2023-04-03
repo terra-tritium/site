@@ -1,8 +1,23 @@
+@font-face {
+  font-family: 'FlamaBasic';
+  src: url('/src/assets/Fonts/Flama-Basic.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .mpl-footer {
     position: relative;
     right: 320px;
     width: 1908px;
     height: 100vh;
+}
+
+.displayCommunity{
+  position:relative;
+  left:500px;   
+  font-family: 'FlamaBasic';
+  color: #fff;  
+  font-size: 3rem;
 }
 
 @media (max-width: 1180px) {

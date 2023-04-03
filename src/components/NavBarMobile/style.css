@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 20px;
+    height: 18px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -59,11 +59,11 @@
   .menu {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 280px;
-    height: 500px;
+    right: -320px;
+    width: 250px;
+    height: 400px;
     background-color: #191b19;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 190;
     overflow-y: auto;
     transition: right 0.3s ease-in-out;

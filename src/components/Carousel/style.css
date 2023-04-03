@@ -17,12 +17,13 @@
   left:-10px;
 }
 
+
 @media (max-width: 768px) {
   .sponsors{
     position:relative;
-    margin-top:-180px;
-    top:-40px;
-    left:-10px;
+    margin-top:-160px;
+    top:-20px;
+    left:10px;
   }
 }
 
@@ -51,9 +52,29 @@
   filter: brightness(0) invert(1);
 }
 
+@media only screen and (max-width: 820px) {
+  .mpl-carousel img {
+    left:20px; 
+    margin-left: -50px;     
+    margin-top: 20px;
+    
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mpl-carousel img {
+    left:20px; 
+    margin-left: -20px;     
+    margin-top: 130px;
+    
+  }
+}
+
   @media only screen and (max-width: 767px) {
     .mpl-carousel img {
-      margin-right: 10px;
+      left:20px; 
+      margin-left: -20px;     
+      margin-top: 15px;
     }
   }
   
@@ -108,30 +129,30 @@
   }
 
   .logo2 {
-    top: -55px;
-    left: -30px;
-    width: 45px;
+    top: -52px;
+    left: -10px;
+    width: 35px;
     height: 63px;
   }
 
   .logo3 {
     top: -55px;
-    left: -10px;
-    width: 55px;
+    left: 0px;
+    width:45px;
     height: 63px;
   }
 
   .logo4 {
     top: -55px;
     left: -5px;
-    width: 55px;
+    width: 45px;
     height: 63px;
   }
 
   .logo5 {
     top: -55px;
     left: 10px;
-    width: 40px;
+    width: 30px;
     height: 63px;
   }
 }
