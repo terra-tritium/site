@@ -7,12 +7,14 @@
     transition: none !important;
 }
 
+
 .mpl-navbar-top {        
   z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  overflow: hidden;
   
 }
 @media (max-width: 1180px) {
@@ -63,7 +65,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      width: 395px;
+      width: 100%;
     }
   }
 
@@ -221,6 +223,7 @@
     align-items: stretch;
     min-height: 100px;
     padding: 0;
+    
 }
 
 .mpl-navbar .mpl-navbar-nav {
@@ -230,9 +233,11 @@
 }
 
 .mpl-navbar .mpl-navbar-brand {
+    position:relative;
     display: flex;
     align-items: center;
-    width: 30px;
+    left:10px;
+    width: 60px;
     height: 100%;
     transition: width 0.3s ease-in-out;
 }

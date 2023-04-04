@@ -5,10 +5,8 @@
     font-style: normal;
 }
 
-body {
+#root {
     overflow-x: hidden;
-
-
 }
 
 a {
@@ -118,8 +116,8 @@ h6,
 .h5,
 .h6,
 .display-2,
-.display-3 {
-    margin-top: 0;
+.display-3 {    
+    margin-top: 0px;
     margin-bottom: 2rem;
     font-size: 20px;
     font-family: 'FlamaBasic';
@@ -130,6 +128,16 @@ h6,
 
 }
 
+.displayContact{
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    font-size: 20px;
+    font-family: 'FlamaBasic';
+    font-weight: 100;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 0.01em;
+}
 
 
 
@@ -206,6 +214,14 @@ h6>.badge,
 .display-2 {
     font-size: 3rem;
 }
+
+.displayContact{
+    position: relative;
+    top:-60px;
+    font-size: 3rem;
+}
+
+
 
 .display-3 {
     font-size: 2.5rem;
@@ -2234,7 +2250,7 @@ h6>.badge,
 .form-control,
 .form-select {
     position:relative;
-    top:-100px;
+    top:-170px;
     height: auto;
     padding: 0.75rem 1.25rem;
     font-family: 'FlamaBasic';
@@ -2423,7 +2439,7 @@ select.form-select>option {
 -------------------------------------------------------------------*/
 .btn {
     position: relative;
-    top:-100px;
+    top:-170px;
     display: inline-flex;
     align-items: stretch;
     padding: 10px 25px;

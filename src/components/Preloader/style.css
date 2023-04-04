@@ -72,9 +72,10 @@
     -webkit-animation: mpl-preloader-show-content 1s ease-in-out;
             animation: mpl-preloader-show-content 1s ease-in-out;
     z-index: 9999;
+    overflow-x: hidden;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
     .mpl-preloader-title {
         font-size: 3rem;
     }

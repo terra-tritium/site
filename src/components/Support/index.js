@@ -36,7 +36,7 @@ function Support() {
   return (
     <div className="mpl-box-md bg-light" id="support">
       <div className="container">
-        <h3 className="display-2 mb-160 text-center" data-sr data-sr-duration="1200" data-sr-distance="20">
+        <h3 className="displayContact mb-160 text-center" data-sr data-sr-duration="1200" data-sr-distance="20">
           Contact Us
         </h3>
         <form
