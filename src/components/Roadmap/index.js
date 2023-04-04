@@ -14,9 +14,9 @@ function Roadmap() {
           data-sr-duration="1200"
           data-sr-distance="20"
         >
-          <h2 className="display-2 mb-60" data-sr-item="works">
+          <h3 className="display-2 mb-60" data-sr-item="works">
             Rodmap
-          </h2>
+          </h3>
           <div
             className="row vgap"
             data-sr="gallery"

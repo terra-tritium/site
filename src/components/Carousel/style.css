@@ -22,7 +22,7 @@
   .sponsors{
     position:relative;
     margin-top:-160px;
-    top:-20px;
+    top:-50px;
     left:10px;
   }
 }
@@ -74,7 +74,7 @@
     .mpl-carousel img {
       left:20px; 
       margin-left: -20px;     
-      margin-top: 15px;
+      margin-top: 0;
     }
   }
   

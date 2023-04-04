@@ -11,9 +11,9 @@ function Carousel() {
     return (
         <div className="mpl-box-sm bg-light1">
             <div className="sponsors">
-                <h2 className="display-2 mb-60 text-center" data-sr data-sr-duration="1200" data-sr-distance="20">
+                <h3 className="display-2 mb-60 text-center" data-sr data-sr-duration="1200" data-sr-distance="20">
                     Partners & Sponsors
-                </h2>
+                </h3>
             </div>
 
 
