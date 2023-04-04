@@ -9,8 +9,8 @@
 @media (max-width: 990px) {
   .hamburger {
     position: fixed;
-    top:40px;
-    right: 130px;
+    top: 35px;
+    right: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -70,7 +70,7 @@
   }
   
   .menu.open {
-    right: 0;
+    right: 65px;
   }
   
   .menu ul {
