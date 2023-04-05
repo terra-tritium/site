@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import LogoImg from "../../assets/logoBanner.svg";
 import './style.css'
 
 
@@ -25,15 +26,15 @@ function Preloader() {
     <>
       <div className="mpl-preloader">
         <div className="mpl-preloader-content">
-          <div className="mpl-preloader-title display-1 h1">Terra Tritium</div>
-          <div className="mpl-preloader-progress">
-            <div></div>
+          <div className="mpl-preloader-title display-1 h1">
+            <img src={LogoImg} alt="" className="logo-img" />
           </div>
         </div>
+        <div className="mpl-preloader-progress" style={{ position: 'absolute', top: '55%' }}>
+          <div></div>
+        </div>
       </div>
-      <div className="mpl-preloader-bg">
-        
-      </div>
+      <div className="mpl-preloader-bg"></div>
     </>
   );
 }
