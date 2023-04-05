@@ -24,11 +24,11 @@ function Carousel() {
                     data-loop="true"
                     data-slides="1"
                     data-breakpoints="1200:7,992:6,767:5,575:4,440:3,320:2">
-                    <a href="https://www.garudanodes.com/" class="mpl-link-brand"><img src={Logo1} className="logo1" alt="" /></a>
-                    <a href="https://openai.com/blog/chatgpt" class="mpl-link-brand"><img src={Logo2} className="logo2" alt="" /></a>
-                    <a href="https://threejs.org/" class="mpl-link-brand"><img src={Logo3} className="logo3" alt="" /></a>
-                    <a href="https://www.rust-lang.org/" class="mpl-link-brand"><img src={Logo4} className="logo4" alt="" /></a>
-                    <a href="https://coinmarketcap.com/currencies/terra-luna/" class="mpl-link-brand"><img src={Logo5} className="logo5" alt="" /></a>
+                    <a href="https://www.garudanodes.com/" className="mpl-link-brand"><img src={Logo1} className="logo1" alt="" /></a>
+                    <a href="https://openai.com/blog/chatgpt" className="mpl-link-brand"><img src={Logo2} className="logo2" alt="" /></a>
+                    <a href="https://threejs.org/" className="mpl-link-brand"><img src={Logo3} className="logo3" alt="" /></a>
+                    <a href="https://www.rust-lang.org/" className="mpl-link-brand"><img src={Logo4} className="logo4" alt="" /></a>
+                    <a href="https://coinmarketcap.com/currencies/terra-luna/" className="mpl-link-brand"><img src={Logo5} className="logo5" alt="" /></a>
                 </div>
             </div>
         </div>
